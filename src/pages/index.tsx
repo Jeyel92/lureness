@@ -3,6 +3,7 @@ import { useLiveQuery } from 'next-sanity/preview'
 
 import Card from '~/components/Card'
 import Container from '~/components/Container'
+import Footer from '~/components/Footer'
 import Header from '~/components/Header'
 import Welcome from '~/components/Welcome'
 import { readToken } from '~/lib/sanity.api'
@@ -43,6 +44,7 @@ export default function IndexPage(
           )}
         </section>
       </Container>
+      <Footer />
     </>
   )
 }
