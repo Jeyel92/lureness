@@ -30,14 +30,15 @@ export default function Header() {
             <button
               type="button"
               // className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              className="w-20 h-7 flex-col justify-start items-center gap-2 inline-flex"
+              className="flex-col gap-3 "
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
               {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
               <svg
-                width="21"
-                height="8"
+                className="h-3 w-10"
+                // width="21"
+                // height="8"
                 viewBox="0 0 21 8"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,19 +135,3 @@ export default function Header() {
     </>
   )
 }
-
-// <div className="">
-//   <div className="">
-//     <div className="w-24 h-6 relative">
-//       <div className="w-20 h-4 left-0 top-[3.55px] absolute">
-//       </div>
-//       <div className="w-3 h-6 left-[81.90px] top-0 absolute">
-//       </div>
-//     </div>
-//   </div>
-//   <div className=" ">
-//     <div className="">
-//
-//     </div>
-//   </div>
-// </div>
