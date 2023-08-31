@@ -16,14 +16,17 @@ export default function Footer() {
         </div>
       </div> */}
         <div className="flex-col justify-start items-start gap-4 flex">
-          <div className="justify-start items-start gap-44 inline-flex">
-            <div className="text-center">
+          {/* <div className="justify-start items-start gap-44 inline-flex"> */}
+          <div className="grid grid-cols-6">
+            <div className="text-center col-start-1 ">
               <span className="text-slate-900 text-base font-normal">lure</span>
-              <span className="text-slate-900 text-base font-bold">ness</span>
+              <span className="text-slate-900 text-base font-bold">
+                ness&nbsp;
+              </span>
               {/* <span style="text-slate-900 text-2xl font-bold"> </span> */}
               <span className="text-slate-900 text-base font-bold">23</span>
             </div>
-            <div className="justify-start items-start gap-4 flex">
+            <div className="col-start-6 justify-end gap-4 flex">
               <div className="w-6 h-6 relative">
                 {/* <div className="w-6 h-6 left-0 top-0 absolute bg-slate-900 rounded-full" /> */}
                 <a
