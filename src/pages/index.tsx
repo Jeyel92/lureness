@@ -3,8 +3,7 @@ import { useLiveQuery } from 'next-sanity/preview'
 
 import Card from '~/components/Card'
 import Container from '~/components/Container'
-import Footer from '~/components/Footer'
-import Header from '~/components/Header'
+import Layout from '~/components/Layout'
 import Welcome from '~/components/Welcome'
 import { readToken } from '~/lib/sanity.api'
 import { getClient } from '~/lib/sanity.client'
@@ -34,17 +33,17 @@ export default function IndexPage(
   const [posts] = useLiveQuery<Post[]>(props.posts, postsQuery)
   return (
     <>
-      <Header />
-      <Container>
-        <section>
-          {posts.length ? (
-            posts.map((post) => <Card key={post._id} post={post} />)
-          ) : (
-            <Welcome />
-          )}
-        </section>
-      </Container>
-      <Footer />
+      <Layout>
+        <Container>
+          <section>
+            {posts.length ? (
+              posts.map((post) => <Card key={post._id} post={post} />)
+            ) : (
+              <Welcome />
+            )}
+          </section>
+        </Container>
+      </Layout>
     </>
   )
 }

@@ -16,7 +16,6 @@ export default function Footer() {
         </div>
       </div> */}
         <div className="flex-col justify-start items-start gap-4 flex">
-          {/* <div className="justify-start items-start gap-44 inline-flex"> */}
           <div className="grid grid-cols-6">
             <div className="text-center col-start-1 ">
               <span className="text-slate-900 text-base font-normal">lure</span>
