@@ -23,7 +23,7 @@ export default function Header() {
           aria-label="Global"
         >
           <div className="w-24 h-6 justify-center items-center inline-flex">
-            <Link href="#home" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Lureness</span>
 
               <Image className="h-8 w-auto" src={imgLogo} alt="Logo Lureness" />
@@ -112,12 +112,12 @@ export default function Header() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  <a
-                    href="#features"
+                  <Link
+                    href="/sobre"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Features
-                  </a>
+                    Sobre
+                  </Link>
                   <a
                     href="#market"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
