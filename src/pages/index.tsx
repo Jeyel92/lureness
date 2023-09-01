@@ -3,6 +3,7 @@ import { useLiveQuery } from 'next-sanity/preview'
 
 import Card from '~/components/Card'
 import Container from '~/components/Container'
+import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
 import Welcome from '~/components/Welcome'
@@ -41,6 +42,15 @@ export default function IndexPage(
             Torne a sua marca mais relevante. <br />
             Branding é Plataforma de Lucro para vender mais e melhor.{' '}
           </div>
+          <Cta
+            bgColor="bg-zinc-900"
+            customClass="gap-2"
+            textoLink="Saiba o motivo"
+          >
+            <p className="w-2/5 text-white text-2xl font-medium">
+              Sua marca não vende?
+            </p>
+          </Cta>
         </div>
 
         <Container>
