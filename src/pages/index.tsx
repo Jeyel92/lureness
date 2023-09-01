@@ -16,10 +16,10 @@ export default function IndexPage() {
           textAlign="text-center"
         >
           <Image className="w-44 h-11 inline-flex" src={imgLogo} alt="logo" />
-          <p className=" mt-6 text-center text-gray-200 text-base">
+          <h1 className=" mt-6 text-center text-gray-200 text-base">
             Sua marca mais&nbsp;
             <span className="font-semibold">forte, rentável e lucrativa.</span>
-          </p>
+          </h1>
         </Hero>
 
         <div className="container">

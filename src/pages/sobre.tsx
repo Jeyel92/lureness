@@ -9,10 +9,10 @@ export default function SobrePage() {
         size="h-36"
         textAlign="text-left"
       >
-        <p className="text-white text-2xl font-bold w-72 pl-5">
+        <h1 className="text-white text-2xl font-bold w-72 pl-5">
           posicionando a sua marca&nbsp;
           <span className=" font-normal">de forma única no mercado.</span>
-        </p>
+        </h1>
       </Hero>
     </Layout>
   )
