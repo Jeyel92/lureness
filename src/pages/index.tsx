@@ -10,7 +10,11 @@ export default function IndexPage() {
   return (
     <>
       <Layout>
-        <Hero bgImageUrl="/hero-backgroud-home.png" size="h-80">
+        <Hero
+          bgImageUrl="/hero-backgroud-home.png"
+          size="h-80"
+          textAlign="text-center"
+        >
           <Image className="w-44 h-11 inline-flex" src={imgLogo} alt="logo" />
           <p className=" mt-6 text-center text-gray-200 text-base">
             Sua marca mais&nbsp;

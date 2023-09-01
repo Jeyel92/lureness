@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Hero({ bgImageUrl, size, children }) {
+export default function Hero({ bgImageUrl, size, textAlign, children }) {
   return (
     <div className={`w-full ${size} relative`}>
       <div className={`w-full ${size} left-0 top-0 absolute`}>
@@ -17,9 +17,9 @@ export default function Hero({ bgImageUrl, size, children }) {
       </div>
 
       <div
-        className={`flex flex-col ${size} place-content-center relative gap-4`}
+        className={`flex flex-col ${size} place-content-center relative gap-4 px-5`}
       >
-        <div className="text-center">{children}</div>
+        <div className={textAlign}>{children}</div>
       </div>
     </div>
   )
