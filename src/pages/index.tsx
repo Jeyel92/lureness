@@ -1,12 +1,23 @@
+import Image from 'next/image'
+
 import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
+
+import imgLogo from '../../public/logo-branco.svg'
 
 export default function IndexPage() {
   return (
     <>
       <Layout>
-        <Hero bgImageUrl="/hero-backgroud-home.png" />
+        <Hero bgImageUrl="/hero-backgroud-home.png" size="h-80">
+          <Image className="w-44 h-11 inline-flex" src={imgLogo} alt="logo" />
+          <p className=" mt-6 text-center text-gray-200 text-base">
+            Sua marca mais&nbsp;
+            <span className="font-semibold">forte, rentável e lucrativa.</span>
+          </p>
+        </Hero>
+
         <div className="container">
           <div className="py-5 pl-5 w-80 text-black text-base font-normal">
             Torne a sua marca mais relevante. <br />
