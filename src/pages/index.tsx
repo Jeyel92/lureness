@@ -3,6 +3,7 @@ import { useLiveQuery } from 'next-sanity/preview'
 
 import Card from '~/components/Card'
 import Container from '~/components/Container'
+import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
 import Welcome from '~/components/Welcome'
 import { readToken } from '~/lib/sanity.api'
@@ -34,6 +35,7 @@ export default function IndexPage(
   return (
     <>
       <Layout>
+        <Hero bgImageUrl="/hero-backgroud-home.png" />
         <Container>
           <section>
             {posts.length ? (
