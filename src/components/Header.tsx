@@ -2,12 +2,16 @@ import { Dialog } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Fragment, useState } from 'react'
 
 import imgLogo from '../../public/logo.svg'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const router = useRouter()
+  const paginaAtual =
+    router.pathname == '/' ? 'menu' : router.pathname.split('/')[1]
   return (
     <>
       <header>
@@ -26,17 +30,17 @@ export default function Header() {
             </Link>
           </div>
 
-          <div className="w-10 h-7 justify-center items-center inline-flex lg:hidden">
+          <div className="w-10 h-6 justify-center items-center inline-flex lg:hidden">
             <button
               type="button"
               // className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              className="flex-col gap-3 "
+              className="flex flex-col items-center gap-1"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
               {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
               <svg
-                className="h-3 w-10"
+                className="h-2 inline-flex"
                 // width="21"
                 // height="8"
                 viewBox="0 0 21 8"
@@ -49,9 +53,9 @@ export default function Header() {
                 />
               </svg>
 
-              <div className="text-center text-black text-xs font-bold">
-                sobre
-              </div>
+              <span className="w-10  text-black text-xs font-bold">
+                {paginaAtual}
+              </span>
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
