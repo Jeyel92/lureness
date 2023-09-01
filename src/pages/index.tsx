@@ -36,6 +36,13 @@ export default function IndexPage(
     <>
       <Layout>
         <Hero bgImageUrl="/hero-backgroud-home.png" />
+        <div className="container">
+          <div className="py-5 pl-5 w-80 text-black text-base font-normal">
+            Torne a sua marca mais relevante. <br />
+            Branding é Plataforma de Lucro para vender mais e melhor.{' '}
+          </div>
+        </div>
+
         <Container>
           <section>
             {posts.length ? (

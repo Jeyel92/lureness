@@ -19,7 +19,7 @@ export default function Hero({ bgImageUrl }) {
       <div className="flex-col h-80 place-content-center relative gap-4">
         <div className="text-center">
           <Image className="w-44 h-11 inline-flex" src={imgLogo} alt="logo" />
-          <p className=" mt-6  leading-8 text-center text-gray-200 text-base">
+          <p className=" mt-6 text-center text-gray-200 text-base">
             Sua marca mais&nbsp;
             <span className="font-semibold">forte, rentável e lucrativa.</span>
           </p>

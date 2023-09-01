@@ -15,7 +15,7 @@ export default function Header() {
         w-96 h-16  justify-start items-start gap-52 inline-flex
         */}
         <nav
-          className="flex max-w-7xl pl-4 pr-5 py-5 justify-between bg-slate-50 shadow"
+          className="flex max-w-7xl p-5 justify-between bg-slate-50 shadow"
           aria-label="Global"
         >
           <div className="w-24 h-6 justify-center items-center inline-flex">
