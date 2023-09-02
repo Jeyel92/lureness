@@ -14,11 +14,15 @@ export default function IndexPage() {
       <Layout>
         <Hero
           bgImageUrl="/hero-backgroud-home.png"
-          size="h-80"
+          size="h-80 md:h-screen"
           textAlign="text-center"
         >
-          <Image className="w-44 h-11 inline-flex" src={imgLogo} alt="logo" />
-          <h1 className=" mt-6 text-center text-gray-200 text-base">
+          <Image
+            className="w-44 h-11 md:w-96 md:h-28 inline-flex"
+            src={imgLogo}
+            alt="logo"
+          />
+          <h1 className=" mt-6 text-center text-gray-200 text-base md:text-3xl">
             Sua marca mais&nbsp;
             <span className="font-semibold">forte, rentável e lucrativa.</span>
           </h1>
