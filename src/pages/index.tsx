@@ -42,14 +42,13 @@ export default function IndexPage() {
 
         <CardsButton />
         <BoxClientes />
-        <Cta
-          bgColor="bg-zinc-900"
-          customClass="gap-2"
-          textoLink="Saiba o motivo"
-        >
-          <p className="w-2/5 text-white text-2xl font-medium">
+        <Cta bgColor="bg-zinc-900" customClass="gap-2">
+          <p className="w-2/5 md:w-3/5 text-white text-2xl font-medium md:text-5xl md:font-semibold">
             Sua marca não vende?
           </p>
+          <div className=" text-slate-50 text-base font-medium underline md:text-white md:text-3xl md:font-bold">
+            Saiba o motivo
+          </div>
         </Cta>
       </Layout>
     </>

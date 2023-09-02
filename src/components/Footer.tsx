@@ -6,17 +6,15 @@ import Cta from './Cta'
 export default function Footer() {
   return (
     <>
-      <Cta
-        bgColor=" bg-slate-900"
-        customClass="gap-4"
-        textoLink="Fale com a Lureness"
-      >
-        <span className="text-amber-500 text-2xl font-medium">
-          Torne sua marca
-          <br />
+      <Cta bgColor=" bg-slate-900" customClass="gap-4">
+        <div className="w-52 md:w-1/2 text-amber-500 text-2xl md:text-3xl font-medium md:font-semibold">
+          Torne sua marca &nbsp;
           <Image className="inline" src={imgElement} alt="Logo Lureness" />
           &nbsp;relevante
-        </span>
+        </div>
+        <div className=" text-slate-50 text-base font-medium underline md:text-white md:text-2xl md:font-normal ">
+          Fale com a Lureness
+        </div>
       </Cta>
       {/* // <footer className="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"> */}
       <footer className="bg-gray-200 p-6 flex-col justify-start items-start gap-4 lg:text-left">
