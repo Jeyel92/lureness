@@ -5,7 +5,7 @@ export default function CardsButton() {
     <section>
       <div className="flex flex-row flex-wrap">
         <div
-          className="md:w-1/2 px-10 h-48 bg-cover flex flex-1 flex-row justify-between items-center gap-6"
+          className="md:w-1/2 px-10 md:px-5 h-48 bg-cover flex flex-1 flex-row justify-between items-center gap-6"
           style={{
             backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.64), rgba(6, 29, 48, 0.64)), url(bg-somos.png)`,
           }}
