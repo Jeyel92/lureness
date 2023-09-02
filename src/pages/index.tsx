@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import BoxClientes from '~/components/BoxClientes'
 import CardsButton from '~/components/CardsButton'
 import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
@@ -31,7 +32,7 @@ export default function IndexPage() {
         </div>
 
         <CardsButton />
-
+        <BoxClientes />
         <Cta
           bgColor="bg-zinc-900"
           customClass="gap-2"
