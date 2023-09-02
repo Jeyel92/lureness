@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import CardButton from '~/components/CardButton'
+import CardsButton from '~/components/CardsButton'
 import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
@@ -29,19 +29,9 @@ export default function IndexPage() {
             para vender mais e melhor.
           </div>
         </div>
-        <section>
-          <div className="flex flex-col">
-            <CardButton
-              bgImageUrl="bg-somos.png"
-              texto=" Somos movidos por resultados a partir de soluções práticas, criativas e
-        estratégica"
-            />
-            <CardButton
-              bgImageUrl="bg-modo.png"
-              texto=" Modo Lureness Operanti"
-            />
-          </div>
-        </section>
+
+        <CardsButton />
+
         <Cta
           bgColor="bg-zinc-900"
           customClass="gap-2"
