@@ -13,6 +13,7 @@ const PreviewProvider = lazy(() => import('~/components/PreviewProvider'))
 
 const sans = Epilogue({
   variable: '--font-family-sans',
+  style: ['normal', 'italic'],
   subsets: ['latin'],
   weight: ['500', '700', '800'],
 })

@@ -12,6 +12,7 @@ export default function Header() {
   const router = useRouter()
   const paginaAtual =
     router.pathname == '/' ? 'menu' : router.pathname.split('/')[1]
+
   return (
     <>
       <header>
@@ -85,53 +86,66 @@ export default function Header() {
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
         >
-          <div className="fixed inset-0 z-10" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
-              <a href="#home" className="-m-1.5 p-1.5">
-                <span className="sr-only">Lureness</span>
-                {/* <Image
-                  className="h-8 w-auto"
-                  src={imgLogo}
-                  alt="Picture of the author"
-                  // width={96}
-                  // height={24}
-                  // blurDataURL="data:..." automatically provided
-                  // placeholder="blur" // Optional blur-up while loading
-                /> */}
-              </a>
+          {/* <div className="fixed inset-0 z-10" /> */}
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-slate-900 bg-opacity-90 p-5">
+            <div className="flex items-center justify-between border-b border-gray-200 pb-4">
+              <h2 className="text-slate-50 text-3xl font-bold">menu</h2>
+
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-zinc-300"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="sr-only">Close menu</span>
+                <span className="sr-only">Fechar menu</span>
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  <Link
-                    href="/sobre"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Sobre
-                  </Link>
-                  <a
-                    href="#market"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Marketplace
-                  </a>
-                  <a
-                    href="#company"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Company
-                  </a>
-                </div>
+            <div className="flow-root text-slate-50">
+              {/* <div className="-my-6"> */}
+              <div className="py-6 text-base ">
+                <Link
+                  href="/"
+                  className={`block py-3  ${
+                    router.pathname == '/'
+                      ? 'text-orange-400 font-semibold'
+                      : 'font-normal'
+                  }`}
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/sobre"
+                  className={`block py-3  ${
+                    router.pathname == '/sobre'
+                      ? 'text-orange-400 font-semibold'
+                      : 'font-normal'
+                  }`}
+                >
+                  Sobre a lureness
+                </Link>
+                <Link href="/sobre" className="block py-3 font-normal">
+                  Nossos serviços
+                </Link>
+                <Link href="/sobre" className="block py-3 font-normal">
+                  Portifólio
+                </Link>
+                <Link href="/sobre" className="block py-3 font-normal">
+                  Blog
+                </Link>
+                <Link href="/sobre" className="block py-3 font-normal">
+                  Lureness na mídia
+                </Link>
+                <Link href="/sobre" className="block py-3 font-normal">
+                  Sobre a lureness
+                </Link>
+                {/* <a
+                  href="#market"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+                >
+                  Marketplace
+                </a> */}
               </div>
+              {/* </div> */}
             </div>
           </Dialog.Panel>
         </Dialog>
