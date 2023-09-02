@@ -28,12 +28,17 @@ export default function IndexPage() {
           </h1>
         </Hero>
 
-        <div className="container">
-          <div className="py-5 pl-5 w-80 text-black text-base font-normal">
-            Torne a sua marca mais relevante. Branding é Plataforma de Lucro
-            para vender mais e melhor.
+        <section>
+          <div className="py-5 pl-10  text-black md:text-zinc-900  ">
+            <h2 className="w-80 text-base md:text-3xl font-normal md:mb-5">
+              Torne a sua marca{' '}
+              <span className="md:text-4xl md:font-bold">mais relevante!</span>
+            </h2>
+            <h3 className="w-80 md:w-3/4 lg:w-2/3 xl:w-1/2  text-base md:text-4xl font-normal md:font-serif">
+              Branding é Plataforma de Lucro para vender mais e melhor.
+            </h3>
           </div>
-        </div>
+        </section>
 
         <CardsButton />
         <BoxClientes />
