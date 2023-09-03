@@ -1,3 +1,4 @@
+import Accordion from '~/components/Accordion'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
 
@@ -24,6 +25,7 @@ export default function SobrePage() {
           </div>
         </div>
       </section>
+      <Accordion />
     </Layout>
   )
 }
