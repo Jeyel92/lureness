@@ -35,6 +35,22 @@ export default function SobrePage() {
           Fale com a Lureness
         </div>
       </Cta>
+      <section id="missao">
+        <div className="py-5 pl-5  text-zinc-900 md:text-zinc-900  ">
+          <h2 className="w-80  text-base md:text-2xl font-normal mb-5 grid">
+            nossa&nbsp;
+            <span className="text-3xl md:text-4xl font-bold font-serif">
+              missão & dna
+            </span>
+          </h2>
+          <p className="w-[22rem] md:w-3/4 lg:w-2/3 xl:w-1/2  text-sm md:text-4xl font-normal md:font-serif leading-tight">
+            Tornar a Marca plataforma de geração de demanda e lucro, através de
+            diferenciação competitiva via estratégias de branding. E para isso
+            atuamos de ponta a ponta, orientados para solução, de forma
+            pragmática, como executores que sonham e consumistas do aprendizado.
+          </p>
+        </div>
+      </section>
     </Layout>
   )
 }
