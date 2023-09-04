@@ -16,6 +16,8 @@ export default function IndexPage() {
           bgImageUrl="/hero-backgroud-home.png"
           size="h-80 md:h-screen"
           textAlign="text-center"
+          gradientTo="rgba(6, 81, 87, 0.64)"
+          gradientFrom="rgba(6, 81, 87, 0.64)"
         >
           <Image
             className="w-44 h-11 md:w-96 md:h-28 inline-flex"

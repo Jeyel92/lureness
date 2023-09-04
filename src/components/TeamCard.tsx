@@ -4,7 +4,7 @@ export default function TeamCard({ nome, cargo, imagem }) {
     <div className="py-4 lg:w-1/4 md:w-1/2">
       <div className="h-full flex flex-col items-center text-center">
         <Image
-          className="flex-shrink-0 rounded-2xl w-full h-80 object-cover object-center mb-4 "
+          className="flex-shrink-0 rounded-2xl w-full h-80 md:h-64 object-cover object-center mb-4 "
           src={imagem}
           alt="Logo team"
           width={343}

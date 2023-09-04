@@ -11,7 +11,7 @@ export default function Team() {
   ]
   return (
     <section id="team">
-      <div className="p-5">
+      <div className="p-5 md:px-10">
         <div className=" text-zinc-900 md:text-zinc-900  ">
           <h2 className="w-80  text-base md:text-2xl font-normal mb-5 grid">
             nosso&nbsp;
@@ -19,17 +19,15 @@ export default function Team() {
               dream team
             </span>
           </h2>
-          <p className="w-[22rem] md:w-3/4 lg:w-2/3 xl:w-1/2  text-sm md:text-4xl font-normal md:font-serif leading-tight">
+          <p className="w-[22rem] md:w-3/4 lg:w-full  text-sm md:text-2xl font-normal ">
             Nomes fortes para fazer da sua marca uma potência em geração de
-            demanda e lucro
-            <br />
-            Lureness é inspirada nas mais de duas décadas de Ana Meneguini em
-            estratégia de Branding, Marketing, Comunicação & PR, Marketing
-            Digital, Branded Content, Eventos e Experiências para Startups e
-            PMEs.
+            demanda e lucro Lureness é inspirada nas mais de duas décadas de Ana
+            Meneguini em estratégia de Branding, Marketing, Comunicação & PR,
+            Marketing Digital, Branded Content, Eventos e Experiências para
+            Startups e PMEs.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center md:justify-between">
           {team.map((member, index) => (
             <TeamCard
               key={index}
