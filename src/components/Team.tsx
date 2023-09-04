@@ -1,5 +1,14 @@
-import Image from 'next/image'
+import TeamCard from './TeamCard'
 export default function Team() {
+  const team = [
+    { name: 'Ana Menegueni', role: 'CEO - FOUNDER', image: '/team/ana.png' },
+    { name: 'Pedro', role: 'Diretor de Criação', image: '/team/pedro.png' },
+    {
+      name: 'Andreia',
+      role: 'Diretora de Projetos',
+      image: '/team/andreia.png',
+    },
+  ]
   return (
     <section id="team">
       <div className="p-5">
@@ -21,26 +30,14 @@ export default function Team() {
           </p>
         </div>
         <div className="flex flex-wrap justify-center">
-          <div className="py-4 lg:w-1/4 md:w-1/2">
-            <div className="h-full flex flex-col items-center text-center">
-              <Image
-                className="flex-shrink-0 rounded-2xl w-full h-80 object-cover object-center mb-4 "
-                src="/team/ana.png"
-                alt="Logo team"
-                width={343}
-                height={272}
-              />
-
-              <div className="w-full">
-                <h2 className="text-zinc-900 text-2xl font-bold font-serif">
-                  Ana Menegueni
-                </h2>
-                <h3 className="ext-zinc-900 text-base font-normal">
-                  CEO - FOUNDER
-                </h3>
-              </div>
-            </div>
-          </div>
+          {team.map((member, index) => (
+            <TeamCard
+              key={index}
+              nome={member.name}
+              cargo={member.role}
+              imagem={member.image}
+            />
+          ))}
         </div>
       </div>
     </section>
