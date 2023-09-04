@@ -2,6 +2,7 @@ import Accordion from '~/components/Accordion'
 import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
+import Team from '~/components/Team'
 
 export default function SobrePage() {
   return (
@@ -51,6 +52,7 @@ export default function SobrePage() {
           </p>
         </div>
       </section>
+      <Team />
     </Layout>
   )
 }
