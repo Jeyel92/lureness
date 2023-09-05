@@ -19,7 +19,7 @@ import { formatDate } from '~/utils'
 interface Query {
   [key: string]: string
 }
-
+export const runtime = 'edge'
 export const getStaticProps: GetStaticProps<
   SharedPageProps & {
     post: Post

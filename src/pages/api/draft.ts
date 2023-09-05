@@ -4,6 +4,8 @@ import { previewSecretId, readToken } from '~/lib/sanity.api'
 import { getClient } from '~/lib/sanity.client'
 import { getPreviewSecret } from '~/utils/previewSecret'
 
+export const runtime = 'edge'
+
 export default async function preview(
   req: NextApiRequest,
   res: NextApiResponse<string | void>,
