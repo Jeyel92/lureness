@@ -2,6 +2,7 @@ import Accordion from '~/components/Accordion'
 import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
+import Projetos from '~/components/Projetos'
 import Team from '~/components/Team'
 
 export default function SobrePage() {
@@ -32,17 +33,9 @@ export default function SobrePage() {
         </div>
         {/* </div> */}
       </section>
-      {/* <section>
-        <div className="py-5 pl-10  text-black md:text-zinc-900  ">
-          <h2 className="w-80 text-base md:text-3xl font-normal md:mb-5">
-            Branding é Plataforma de Lucro
-            <span className="md:text-4xl md:font-bold">
-             &nbsp; Marcas Fortes Vendem Mais e Melhor.
-            </span>
-          </h2>
-        </div>
-      </section> */}
+
       <Accordion />
+      <Projetos />
       <Cta bgColor="bg-zinc-900" customClass="gap-2">
         <p className="w-[85%] md:w-3/5 lg:w-full text-white text-2xl font-medium md:text-2xl md:font-semibold">
           Nós temos a solução ideal para a sua empresa!

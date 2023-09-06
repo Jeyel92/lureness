@@ -5,6 +5,7 @@ import CardsButton from '~/components/CardsButton'
 import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
+import Projetos from '~/components/Projetos'
 
 import imgLogo from '../../public/logo-branco.svg'
 
@@ -52,6 +53,21 @@ export default function IndexPage() {
             Saiba o motivo
           </div>
         </Cta>
+        <section id="missao">
+          <div className="py-5 pl-5  md:px-10  ">
+            <h2 className="w-80 md:w-full text-orange-600 text-2xl  md:text-5xl font-semibold mb-5 ">
+              Marcas fortes, negócios rentáveis.
+            </h2>
+            <p className="w-[22rem] md:w-3/4 lg:w-full text-sm md:text-2xl font-normal text-zinc-900  ">
+              Por isso, criamos estratégias para sua marca ganhar relevância na
+              cabeça de quem importa: consumidores, talentos e investidores,
+              evidenciando sua proposta de valor, engajando seu time e
+              fortalecendo o papel central do seu cliente na execução do dia a
+              dia.
+            </p>
+          </div>
+        </section>
+        <Projetos />
       </Layout>
     </>
   )
