@@ -16,11 +16,8 @@ export default function Header() {
   return (
     <>
       <header>
-        {/* mx-auto  items-center  p-6 lg:px-8 
-        w-96 h-16  justify-start items-start gap-52 inline-flex
-        */}
         <nav
-          className="flex max-w-7xl p-5 justify-between bg-slate-50 shadow"
+          className="flex p-5 justify-between bg-slate-50 shadow"
           aria-label="Global"
         >
           <div className="w-24 h-6 justify-center items-center inline-flex">
@@ -34,12 +31,11 @@ export default function Header() {
           <div className="w-10 h-6 justify-center items-center inline-flex lg:hidden">
             <button
               type="button"
-              // className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
               className="flex flex-col items-center gap-1"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
+
               <svg
                 className="h-2 inline-flex"
                 // width="21"
@@ -59,25 +55,37 @@ export default function Header() {
               </span>
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            <a
-              href="#feat"
-              className="text-sm font-semibold leading-6 text-gray-900"
+          <div className="hidden lg:flex lg:gap-x-12 text-black">
+            <Link
+              href="/sobre"
+              className={`block py-3  text-sm font-semibold leading-6 `}
             >
-              Sobre
-            </a>
-            <a
-              href="#mark"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              Sobre a lureness
+            </Link>
+            <Link
+              href="/sobre"
+              className="block py-3  text-sm font-semibold leading-6"
             >
-              Contato
-            </a>
-            <a
-              href="#compa"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              Nossos serviços
+            </Link>
+            <Link
+              href="/sobre"
+              className="block py-3  text-sm font-semibold leading-6"
+            >
+              Portifólio
+            </Link>
+            <Link
+              href="/sobre"
+              className="block py-3  text-sm font-semibold leading-6"
             >
               Blog
-            </a>
+            </Link>
+            <Link
+              href="/sobre"
+              className="block py-3  text-sm font-semibold leading-6"
+            >
+              Lureness na mídia
+            </Link>
           </div>
         </nav>
         <Dialog
@@ -86,7 +94,6 @@ export default function Header() {
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
         >
-          {/* <div className="fixed inset-0 z-10" /> */}
           <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-slate-900 bg-opacity-90 p-5">
             <div className="flex items-center justify-between border-b border-gray-200 pb-4">
               <h2 className="text-slate-50 text-3xl font-bold">menu</h2>
@@ -101,7 +108,6 @@ export default function Header() {
               </button>
             </div>
             <div className="flow-root text-slate-50">
-              {/* <div className="-my-6"> */}
               <div className="py-6 text-base ">
                 <Link
                   href="/"
@@ -135,17 +141,7 @@ export default function Header() {
                 <Link href="/sobre" className="block py-3 font-normal">
                   Lureness na mídia
                 </Link>
-                <Link href="/sobre" className="block py-3 font-normal">
-                  Sobre a lureness
-                </Link>
-                {/* <a
-                  href="#market"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
-                >
-                  Marketplace
-                </a> */}
               </div>
-              {/* </div> */}
             </div>
           </Dialog.Panel>
         </Dialog>
