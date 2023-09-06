@@ -2,7 +2,7 @@ import Accordion from '~/components/Accordion'
 import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
-import Projetos from '~/components/Projetos'
+// import Projetos from '~/components/Projetos'
 import Team from '~/components/Team'
 
 export default function SobrePage() {
@@ -35,7 +35,7 @@ export default function SobrePage() {
       </section>
 
       <Accordion />
-      <Projetos />
+      {/* <Projetos /> */}
       <Cta bgColor="bg-zinc-900" customClass="gap-2">
         <p className="w-[85%] md:w-3/5 lg:w-full text-white text-2xl font-medium md:text-2xl md:font-semibold">
           Nós temos a solução ideal para a sua empresa!

@@ -5,8 +5,8 @@ import CardsButton from '~/components/CardsButton'
 import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
-import Projetos from '~/components/Projetos'
 
+// import Projetos from '~/components/Projetos'
 import imgLogo from '../../public/logo-branco.svg'
 
 export default function IndexPage() {
@@ -67,7 +67,7 @@ export default function IndexPage() {
             </p>
           </div>
         </section>
-        <Projetos />
+        {/* <Projetos /> */}
       </Layout>
     </>
   )
