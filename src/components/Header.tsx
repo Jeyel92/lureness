@@ -63,7 +63,7 @@ export default function Header() {
               Sobre a lureness
             </Link>
             <Link
-              href="/sobre"
+              href="/servicos"
               className="block py-3  text-sm font-semibold leading-6"
             >
               Nossos serviços
@@ -129,7 +129,7 @@ export default function Header() {
                 >
                   Sobre a lureness
                 </Link>
-                <Link href="/sobre" className="block py-3 font-normal">
+                <Link href="/servicos" className="block py-3 font-normal">
                   Nossos serviços
                 </Link>
                 <Link href="/sobre" className="block py-3 font-normal">
