@@ -19,7 +19,7 @@ export default function Header() {
     <>
       <header>
         <nav
-          className="flex px-5 py-2 justify-between items-center bg-slate-50 shadow w-full fixed"
+          className="flex px-5 py-3 md:py-0 justify-between items-center bg-slate-50 shadow w-full fixed"
           aria-label="Global"
         >
           <div className="w-24 h-6 justify-center items-center inline-flex">
@@ -52,7 +52,7 @@ export default function Header() {
                 />
               </svg>
 
-              <span className="w-10  text-black text-xs font-bold">
+              <span className="w-12  text-black text-xs font-bold">
                 {paginaAtual}
               </span>
             </button>
