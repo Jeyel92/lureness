@@ -9,7 +9,7 @@ export default function ServicosPage() {
       <Hero
         bgImageUrl="/hero-background-servicos.png"
         size="h-36 md:h-96"
-        textAlign="text-left"
+        textAlign="text-center"
         gradientFrom="rgba(36, 49, 55, 1)"
         gradientTo="rgba(6, 81, 87, 0.64) "
       >
@@ -24,7 +24,7 @@ export default function ServicosPage() {
             Pensamos e executamos tailor made com know how e excelência técnica
             a serviço da sua marca.
           </h2>
-          <p className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2  text-base md:text-4xl font-normal md:font-serif">
+          <p className="w-full   text-base md:text-2xl font-normal">
             Empresas com marcas consistentes podem obter aumentos de receita de
             até <span className="font-medium">33% + 74%</span> dos prospects
             preferem fazer negócios com marcas de boa reputação.

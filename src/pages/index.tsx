@@ -33,32 +33,35 @@ export default function IndexPage() {
 
         <section>
           <div className="py-5 pl-10  text-black md:text-zinc-900  ">
-            <h2 className="w-80 text-base md:text-3xl font-normal md:mb-5">
+            <h2 className="w-80 md:w-3/4 lg:w-2/3 xl:w-1/2 text-base md:text-2xl font-normal md:mb-5">
               Torne a sua marca{' '}
-              <span className="md:text-4xl md:font-bold">mais relevante!</span>
+              <span className="md:text-3xl md:font-semibold">
+                mais relevante!
+              </span>
+              <br />
+              <span className=" md:text-3xl font-normal md:font-serif">
+                Branding é Plataforma de Lucro para vender mais e melhor.
+              </span>
             </h2>
-            <h3 className="w-80 md:w-3/4 lg:w-2/3 xl:w-1/2  text-base md:text-4xl font-normal md:font-serif">
-              Branding é Plataforma de Lucro para vender mais e melhor.
-            </h3>
           </div>
         </section>
 
         <CardsButton />
         <BoxClientes />
         <Cta bgColor="bg-zinc-900" customClass="gap-2">
-          <p className="w-2/5 md:w-3/5 text-white text-2xl font-medium md:text-5xl md:font-semibold">
+          <p className="w-2/5 md:w-3/5 text-white text-2xl font-medium md:text-2xl md:font-semibold">
             Sua marca não vende?
           </p>
-          <div className=" text-slate-50 text-base font-medium underline md:text-white md:text-3xl md:font-bold">
+          <div className=" text-slate-50 text-base font-medium underline md:text-white md:text-xl md:font-bold">
             Saiba o motivo
           </div>
         </Cta>
         <section id="missao">
           <div className="py-5 pl-5  md:px-10  ">
-            <h2 className="w-80 md:w-full text-orange-600 text-2xl  md:text-5xl font-semibold mb-5 ">
+            <h2 className="w-80 md:w-full text-orange-600 text-2xl  md:text-2xl font-semibold mb-5 ">
               Marcas fortes, negócios rentáveis.
             </h2>
-            <p className="w-[22rem] md:w-3/4 lg:w-full text-sm md:text-2xl font-normal text-zinc-900  ">
+            <p className="w-[22rem] md:w-3/4 lg:w-full text-sm md:text-xl font-normal text-zinc-900  ">
               Por isso, criamos estratégias para sua marca ganhar relevância na
               cabeça de quem importa: consumidores, talentos e investidores,
               evidenciando sua proposta de valor, engajando seu time e

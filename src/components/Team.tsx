@@ -19,7 +19,7 @@ export default function Team() {
               dream team
             </span>
           </h2>
-          <p className="w-[22rem] md:w-3/4 lg:w-full  text-sm md:text-2xl font-normal ">
+          <p className="w-[22rem] md:w-3/4 lg:w-full  text-sm md:text-xl font-normal ">
             Nomes fortes para fazer da sua marca uma potência em geração de
             demanda e lucro Lureness é inspirada nas mais de duas décadas de Ana
             Meneguini em estratégia de Branding, Marketing, Comunicação & PR,

@@ -17,7 +17,7 @@ export default function Header() {
     <>
       <header>
         <nav
-          className="flex p-5 justify-between bg-slate-50 shadow"
+          className="flex px-5 justify-between items-center bg-slate-50 shadow"
           aria-label="Global"
         >
           <div className="w-24 h-6 justify-center items-center inline-flex">

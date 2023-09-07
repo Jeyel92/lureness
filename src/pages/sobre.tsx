@@ -23,9 +23,9 @@ export default function SobrePage() {
       <section>
         <div className="px-5 md:px-10 py-10">
           {/* <div className="flex flex-col text-left w-full"> */}
-          <p className="text-left text-zinc-900 text-base md:text-3xl font-normal md:w-[40rem] ">
+          <p className="text-left text-zinc-900 text-base md:text-2xl font-normal md:w-[40rem] ">
             Branding é plataforma de lucro,
-            <span className="md:text-4xl md:font-bold">
+            <span className="md:text-3xl md:font-bold">
               {' '}
               marcas fortes vendem mais e melhor.
             </span>
@@ -101,7 +101,7 @@ export default function SobrePage() {
               missão & dna
             </span>
           </h2>
-          <p className="w-[22rem] md:w-3/4 lg:w-full text-sm md:text-2xl font-normal ">
+          <p className="w-[22rem] md:w-3/4 lg:w-full text-sm md:text-xl font-normal ">
             Tornar a Marca plataforma de geração de demanda e lucro, através de
             diferenciação competitiva via estratégias de branding. E para isso
             atuamos de ponta a ponta, orientados para solução, de forma
