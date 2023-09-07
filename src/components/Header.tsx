@@ -13,11 +13,13 @@ export default function Header() {
   const paginaAtual =
     router.pathname == '/' ? 'menu' : router.pathname.split('/')[1]
 
+  const cssLinkAtivoMobile = 'text-orange-400 font-semibold'
+  const cssLinkMobile = 'font-normal'
   return (
     <>
       <header>
         <nav
-          className="flex px-5 justify-between items-center bg-slate-50 shadow"
+          className="flex px-5 py-2 justify-between items-center bg-slate-50 shadow w-full fixed"
           aria-label="Global"
         >
           <div className="w-24 h-6 justify-center items-center inline-flex">
@@ -68,7 +70,7 @@ export default function Header() {
             >
               Nossos serviços
             </Link>
-            <Link
+            {/* <Link
               href="/sobre"
               className="block py-3  text-sm font-semibold leading-6"
             >
@@ -85,7 +87,7 @@ export default function Header() {
               className="block py-3  text-sm font-semibold leading-6"
             >
               Lureness na mídia
-            </Link>
+            </Link> */}
           </div>
         </nav>
         <Dialog
@@ -112,9 +114,7 @@ export default function Header() {
                 <Link
                   href="/"
                   className={`block py-3  ${
-                    router.pathname == '/'
-                      ? 'text-orange-400 font-semibold'
-                      : 'font-normal'
+                    router.pathname == '/' ? cssLinkAtivoMobile : cssLinkMobile
                   }`}
                 >
                   Home
@@ -123,16 +123,23 @@ export default function Header() {
                   href="/sobre"
                   className={`block py-3  ${
                     router.pathname == '/sobre'
-                      ? 'text-orange-400 font-semibold'
-                      : 'font-normal'
+                      ? cssLinkAtivoMobile
+                      : cssLinkMobile
                   }`}
                 >
                   Sobre a lureness
                 </Link>
-                <Link href="/servicos" className="block py-3 font-normal">
+                <Link
+                  href="/servicos"
+                  className={`block py-3  ${
+                    router.pathname == '/servicos'
+                      ? cssLinkAtivoMobile
+                      : cssLinkMobile
+                  }`}
+                >
                   Nossos serviços
                 </Link>
-                <Link href="/sobre" className="block py-3 font-normal">
+                {/* <Link href="/sobre" className="block py-3 font-normal">
                   Portifólio
                 </Link>
                 <Link href="/sobre" className="block py-3 font-normal">
@@ -140,7 +147,7 @@ export default function Header() {
                 </Link>
                 <Link href="/sobre" className="block py-3 font-normal">
                   Lureness na mídia
-                </Link>
+                </Link> */}
               </div>
             </div>
           </Dialog.Panel>

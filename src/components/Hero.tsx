@@ -10,7 +10,7 @@ export default function Hero({
 }) {
   return (
     <div
-      className={`flex flex-col justify-center ${size} bg-cover bg-no-repeat`}
+      className={`flex flex-col justify-center ${size} bg-cover bg-no-repeat pt-5 items-center`}
       style={{
         backgroundImage: `linear-gradient( ${gradientFrom},${gradientTo}), url(${bgImageUrl})`,
       }}
