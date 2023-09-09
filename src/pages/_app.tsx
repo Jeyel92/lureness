@@ -15,7 +15,6 @@ const sans = Epilogue({
   variable: '--font-family-sans',
   style: ['normal', 'italic'],
   subsets: ['latin'],
-  weight: ['300', '500', '600', '700', '800'],
 })
 
 const serif = Libre_Baskerville({
