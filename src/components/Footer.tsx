@@ -27,7 +27,7 @@ export default function Footer() {
             {/* <span style="text-slate-900 text-2xl font-bold"> </span> */}
             <span className="text-slate-900 text-base font-bold">23</span>
           </div>
-          <div className="justify-start xl:justify-center items-start md:items-center gap-4 md:gap-8 flex flex-col md:flex-row md:flex-wrap ">
+          {/* <div className="justify-start xl:justify-center items-start md:items-center gap-4 md:gap-8 flex flex-col md:flex-row md:flex-wrap ">
             <div className="text-center text-slate-900 text-sm font-normal leading-tight">
               nosso blog
             </div>
@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="text-center text-slate-900 text-sm font-normal leading-tight">
               cookies
             </div>
-          </div>
+          </div> */}
         </div>
         <div className=" justify-end gap-4 flex">
           <div className="w-6 h-6 relative">
