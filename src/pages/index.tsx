@@ -32,7 +32,7 @@ export default function IndexPage() {
         </Hero>
 
         <section>
-          <div className="py-5 pl-10  text-black md:text-zinc-900  ">
+          <div className="py-5 md:pt-12 pl-10  text-black md:text-zinc-900  ">
             <h2 className="w-80 md:w-3/4 lg:w-2/3 xl:w-1/2 text-base md:text-2xl font-normal md:mb-5">
               Torne a sua marca{' '}
               <span className="md:text-3xl md:font-semibold">
