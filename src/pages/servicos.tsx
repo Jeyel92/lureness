@@ -36,18 +36,18 @@ export default function ServicosPage() {
           title="Minha marca não vende. O que pode ser?"
           bgColor="bg-orange-600"
         >
-          <h3 className="text-slate-50 text-base font-semibold ">
+          {/* <h3 className="text-slate-50 text-base font-semibold ">
             Minha marca não vende. O que pode ser?
-          </h3>
+          </h3> */}
           <p className=" text-slate-50 text-sm font-normal leading-tight mb-2">
             Existem diversos motivos que fazem uma marca ter um grandes lucro no
             mercado, a nossa função é a de entender sua dor e trabalharmos ela,
             para que assim você consiga atingir todos os seus objetivos.
           </p>
 
-          <h4 className=" text-slate-50 text-sm font-bold mb-2">
+          <p className=" text-slate-50 text-sm font-normal leading-tight mb-2">
             Como fazemos isso?
-          </h4>
+          </p>
           <ul className="text-slate-50 text-sm font-normal leading-tight list-disc px-6">
             <li>BRANDING</li>
             <li>Identidades Visual e Verbal</li>
@@ -60,18 +60,18 @@ export default function ServicosPage() {
           title="Como posso me comunicar com meu público?"
           bgColor="bg-orange-600 bg-opacity-80"
         >
-          <h3 className="text-slate-50 text-base font-semibold ">
+          {/* <h3 className="text-slate-50 text-base font-semibold ">
             Como posso me comunicar com meu público?
-          </h3>
+          </h3> */}
           <p className=" text-slate-50 text-sm font-normal leading-tight mb-2">
             Comunicação é uma das chaves para um negócio de sucesso, por isso
             nossa equipe realiza um olhar detalhado na sua marca para encontrar
             as melhores soluções para o seu negócio.
           </p>
 
-          <h4 className=" text-slate-50 text-sm font-bold mb-2">
+          <p className=" text-slate-50 text-sm font-normal leading-tight mb-2">
             Como fazemos isso?
-          </h4>
+          </p>
           <ul className="text-slate-50 text-sm font-normal leading-tight list-disc px-6">
             <li>Comunicação Omnichannel</li>
             <li>Comunicação Institucional</li>
@@ -83,18 +83,18 @@ export default function ServicosPage() {
           title="Vender, eu vendo. Mas nem todas as pessoas sabem o que significa a empresa."
           bgColor="bg-orange-600 bg-opacity-60"
         >
-          <h3 className="text-slate-50 text-base font-semibold ">
+          {/* <h3 className="text-slate-50 text-base font-semibold ">
             Vender eu vendo, mas nem todas as pessoas sabem o que é a empresa.
-          </h3>
+          </h3> */}
           <p className=" text-slate-50 text-sm font-normal leading-tight mb-2">
             Sabemos como é importante ser reconhecido pelo mercado, por isso nós
             entendemos o seu posicionamento e a melhor forma das pessoas te
             reconhecerem.
           </p>
 
-          <h4 className=" text-slate-50 text-sm font-bold mb-2">
+          <p className=" text-slate-50 text-sm font-normal leading-tight mb-2">
             Como fazemos isso?
-          </h4>
+          </p>
           <ul className="text-slate-50 text-sm font-normal leading-tight list-disc px-6">
             <li>Cultura Corporativa</li>
             <li>Jornadas de Compra</li>
@@ -107,19 +107,20 @@ export default function ServicosPage() {
           title="Minha marca não vende. O que pode ser?"
           bgColor="bg-orange-700"
         >
-          <h3 className="text-slate-50 text-base font-semibold ">
+          {/* <h3 className="text-slate-50 text-base font-semibold ">
             Como tornar a minha empresa atrativa para investidores, clientes e
             colaboradores?
-          </h3>
+          </h3> */}
           <p className=" text-slate-50 text-sm font-normal leading-tight mb-2">
             Este é de fato um grande desafio, porém com as orientações corretas
             e uma metodologia voltada para o cliente a Lureness vai construir
             com você o caminho do sucesso.
           </p>
 
-          <h4 className=" text-slate-50 text-sm font-bold mb-2">
+          <p className=" text-slate-50 text-sm font-normal leading-tight mb-2">
             Como fazemos isso?
-          </h4>
+          </p>
+
           <ul className="text-slate-50 text-sm font-normal leading-tight list-disc px-6">
             <li>Onboarding e Sucesso do Cliente</li>
             <li>Jornada da Marca Empregadora</li>
