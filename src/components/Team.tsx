@@ -4,7 +4,7 @@ export default function Team() {
     { name: 'Ana Menegueni', role: 'CEO - FOUNDER', image: '/team/ana.png' },
     { name: 'Pedro', role: 'Diretor de Criação', image: '/team/pedro.png' },
     {
-      name: 'Andreia',
+      name: 'Andrea',
       role: 'Diretora de Projetos',
       image: '/team/andreia.png',
     },
