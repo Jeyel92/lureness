@@ -20,7 +20,7 @@ export const onSubmit = mailChannelsPlugin({
     }),
 })
 
-export const runtime = 'edge'
+// export const runtime = 'edge'
 export default function ContatoPage() {
   return (
     <Layout>
