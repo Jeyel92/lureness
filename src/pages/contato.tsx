@@ -1,26 +1,23 @@
-import mailChannelsPlugin from '@cloudflare/pages-plugin-mailchannels'
+import { FormEvent } from 'react'
 
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
 
-export const onSubmit = mailChannelsPlugin({
-  personalizations: [
-    {
-      to: [{ name: 'ACME Support', email: 'jeiel.benedito@gmail.com' }],
-    },
-  ],
-  from: {
-    name: 'ACME Support',
-    email: 'support@example.com',
-  },
-  respondWith: () =>
-    new Response(null, {
-      status: 302,
-      headers: { Location: '/thank-you' },
-    }),
-})
+async function onSubmit(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault()
 
-// export const runtime = 'edge'
+  const formData = new FormData(event.currentTarget)
+  const response = await fetch('/api/sendMail', {
+    method: 'POST',
+    body: formData,
+  })
+
+  // Handle response if necessary
+  const data = await response.json()
+  console.log(data)
+  // ...
+}
+
 export default function ContatoPage() {
   return (
     <Layout>
@@ -45,10 +42,7 @@ export default function ContatoPage() {
             Fale conosco
           </h2>
         </div>
-        <form
-          data-static-form-name="contact"
-          className="mx-auto mt-16 max-w-xl sm:mt-20"
-        >
+        <form onSubmit={onSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div className="sm:col-span-2">
               <label
