@@ -10,9 +10,9 @@ export const onRequest = mailChannelsPlugin({
     name: 'ACME Support',
     email: 'support@example.com',
   },
-  respondWith: () => {
-    return new Response(
-      `Thank you for submitting your enquiry. A member of the team will be in touch shortly.`,
-    )
-  },
+  respondWith: () =>
+    new Response(null, {
+      status: 302,
+      headers: { Location: '/thank-you' },
+    }),
 })
