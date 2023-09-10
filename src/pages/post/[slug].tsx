@@ -19,7 +19,7 @@ import { formatDate } from '~/utils'
 interface Query {
   [key: string]: string
 }
-
+export const runtime = 'experimental-edge'
 export const getStaticProps: GetStaticProps<
   SharedPageProps & {
     post: Post
@@ -45,7 +45,7 @@ export const getStaticProps: GetStaticProps<
 }
 
 export default function ProjectSlugRoute(
-  props: InferGetStaticPropsType<typeof getStaticProps>
+  props: InferGetStaticPropsType<typeof getStaticProps>,
 ) {
   const [post] = useLiveQuery(props.post, postBySlugQuery, {
     slug: props.post.slug.current,
