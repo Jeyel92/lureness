@@ -1,6 +1,26 @@
+import mailChannelsPlugin from '@cloudflare/pages-plugin-mailchannels'
+
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
 
+export const onSubmit = mailChannelsPlugin({
+  personalizations: [
+    {
+      to: [{ name: 'ACME Support', email: 'jeiel.benedito@gmail.com' }],
+    },
+  ],
+  from: {
+    name: 'ACME Support',
+    email: 'support@example.com',
+  },
+  respondWith: () =>
+    new Response(null, {
+      status: 302,
+      headers: { Location: '/thank-you' },
+    }),
+})
+
+export const runtime = 'edge'
 export default function ContatoPage() {
   return (
     <Layout>
@@ -27,7 +47,6 @@ export default function ContatoPage() {
         </div>
         <form
           data-static-form-name="contact"
-          method="post"
           className="mx-auto mt-16 max-w-xl sm:mt-20"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
