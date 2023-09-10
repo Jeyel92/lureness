@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import BoxClientes from '~/components/BoxClientes'
 import CardsButton from '~/components/CardsButton'
@@ -53,7 +54,7 @@ export default function IndexPage() {
             Sua marca não vende?
           </p>
           <div className=" text-slate-50 text-base font-medium underline md:text-white md:text-xl md:font-bold">
-            Saiba o motivo
+            <Link href="/contato"> Saiba o motivo</Link>
           </div>
         </Cta>
         <section id="missao">

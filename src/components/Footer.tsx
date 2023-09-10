@@ -1,8 +1,8 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import imgElement from '../../public/element.svg'
 import Cta from './Cta'
-
 export default function Footer() {
   return (
     <>
@@ -13,7 +13,7 @@ export default function Footer() {
           &nbsp;relevante
         </div>
         <div className=" text-slate-50 text-base font-medium underline md:text-white md:text-2xl md:font-normal ">
-          Fale com a Lureness
+          <Link href="/contato">Fale com a Lureness</Link>
         </div>
       </Cta>
 

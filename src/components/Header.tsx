@@ -70,13 +70,13 @@ export default function Header() {
             >
               Nossos serviços
             </Link>
-            {/* <Link
-              href="/sobre"
+            <Link
+              href="/contato"
               className="block py-3  text-sm font-semibold leading-6"
             >
-              Portifólio
+              Contato
             </Link>
-            <Link
+            {/*  <Link
               href="/sobre"
               className="block py-3  text-sm font-semibold leading-6"
             >
@@ -139,10 +139,10 @@ export default function Header() {
                 >
                   Nossos serviços
                 </Link>
-                {/* <Link href="/sobre" className="block py-3 font-normal">
-                  Portifólio
+                <Link href="/contato" className="block py-3 font-normal">
+                  Contato
                 </Link>
-                <Link href="/sobre" className="block py-3 font-normal">
+                {/* <Link href="/sobre" className="block py-3 font-normal">
                   Blog
                 </Link>
                 <Link href="/sobre" className="block py-3 font-normal">
