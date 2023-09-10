@@ -15,7 +15,7 @@ export default function IndexPage() {
     <>
       <Layout>
         <Hero
-          bgImageUrl="/hero-backgroud-home.png"
+          bgImageUrl="/hero-backgroud-home1.png"
           size="h-80 md:h-screen"
           textAlign="text-center"
           gradientTo="rgba(6, 81, 87, 0.64)"
