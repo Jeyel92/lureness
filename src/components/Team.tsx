@@ -2,7 +2,7 @@ import TeamCard from './TeamCard'
 export default function Team() {
   const team = [
     { name: 'Ana Menegueni', role: 'CEO - FOUNDER', image: '/team/ana.png' },
-    { name: 'Pedro', role: 'Diretor de Criação', image: '/team/pedro.png' },
+    // { name: 'Pedro', role: 'Diretor de Criação', image: '/team/pedro.png' },
     {
       name: 'Andrea',
       role: 'Diretora de Projetos',
@@ -27,7 +27,7 @@ export default function Team() {
             Startups e PMEs.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center md:justify-between">
+        <div className="flex flex-wrap justify-center md:justify-center md:gap-5">
           {team.map((member, index) => (
             <TeamCard
               key={index}

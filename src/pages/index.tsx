@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
-import BoxClientes from '~/components/BoxClientes'
+// import Link from 'next/link'
+// import BoxClientes from '~/components/BoxClientes'
 import CardsButton from '~/components/CardsButton'
-import Cta from '~/components/Cta'
+// import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
 
@@ -15,7 +15,7 @@ export default function IndexPage() {
     <>
       <Layout>
         <Hero
-          bgImageUrl="/hero-backgroud-home.png"
+          bgImageUrl="/hero-backgroud-home.jpg"
           size="h-80 md:h-screen"
           textAlign="text-center"
           gradientTo="rgba(6, 81, 87, 0.64)"
@@ -48,15 +48,15 @@ export default function IndexPage() {
         </section>
 
         <CardsButton />
-        <BoxClientes />
-        <Cta bgColor="bg-zinc-900" customClass="gap-2">
+        {/* <BoxClientes /> */}
+        {/* <Cta bgColor="bg-zinc-900" customClass="gap-2">
           <p className="w-2/5 md:w-3/5 text-white text-2xl font-medium md:text-2xl md:font-semibold">
             Sua marca não vende?
           </p>
           <div className=" text-slate-50 text-base font-medium underline md:text-white md:text-xl md:font-bold">
             <Link href="/contato"> Saiba o motivo</Link>
           </div>
-        </Cta>
+        </Cta> */}
         <section id="missao">
           <div className="py-5 pl-5  md:px-10  ">
             <h2 className="w-80 md:w-full text-orange-600 text-2xl  md:text-2xl font-semibold mb-5 ">
