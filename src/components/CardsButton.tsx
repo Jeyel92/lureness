@@ -9,7 +9,7 @@ export default function CardsButton() {
           <div
             className="md:w-1/3 px-10 md:p-5 h-48 md:h-96 md:rounded-2xl bg-cover flex flex-1 flex-row md:flex-col justify-between items-center gap-6 cursor-pointer"
             style={{
-              backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.64), rgba(6, 29, 48, 0.64)), url(bg-somos.png)`,
+              backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.64), rgba(6, 29, 48, 0.64)), url(bg-somos1.png)`,
             }}
           >
             <p className="w-56 md:w-full text-slate-50 text-xl font-normal md:text-2xl md:font-semibold">
@@ -31,7 +31,7 @@ export default function CardsButton() {
           <div
             className="md:w-1/3 px-10 md:p-5 h-48 md:h-96 md:rounded-2xl bg-cover flex flex-1 flex-row md:flex-col justify-between items-center gap-6 cursor-pointer"
             style={{
-              backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.64), rgba(6, 29, 48, 0.64)), url(bg-modo.jpg)`,
+              backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.64), rgba(6, 29, 48, 0.64)), url(bg-modo1.png)`,
             }}
           >
             <p className="w-56 md:w-full text-slate-50 text-xl md:text-2xl font-normal md:font-semibold">

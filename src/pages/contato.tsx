@@ -23,7 +23,7 @@ export default function ContatoPage() {
   return (
     <Layout>
       <Hero
-        bgImageUrl="/hero-backgroud-sobre.png"
+        bgImageUrl="/hero-backgroud-contato.jpg"
         size="h-36 md:h-96"
         textAlign="text-center"
         gradientFrom="rgba(36, 49, 55, 1)"

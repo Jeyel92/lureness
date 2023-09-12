@@ -7,7 +7,7 @@ export default function ServicosPage() {
   return (
     <Layout>
       <Hero
-        bgImageUrl="/hero-background-servicos.png"
+        bgImageUrl="/hero-background-servicos.jpg"
         size="h-36 md:h-96"
         textAlign="text-center"
         gradientFrom="rgba(36, 49, 55, 1)"
