@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function CardsButton() {
   return (
     <section>
-      <div className="flex flex-row flex-wrap md:gap-12 md:px-10">
+      <div className="flex flex-row flex-wrap md:gap-12 md:px-10 md:mb-8">
         <Link href="/sobre" className="contents">
           <div
             className="md:w-1/3 px-10 md:p-5 h-48 md:h-96 md:rounded-2xl bg-cover flex flex-1 flex-row md:flex-col justify-between items-center gap-6 cursor-pointer"
