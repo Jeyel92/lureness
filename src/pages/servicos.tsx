@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import Accordion from '~/components/Accordion'
 import AccordionSection from '~/components/AccordionSection'
 //import Cta from '~/components/Cta'
@@ -9,26 +11,51 @@ export default function ServicosPage() {
       <Hero
         bgImageUrl="/hero-background-servicos.jpg"
         size="h-36 md:h-96"
-        textAlign="text-center"
+        textAlign="text-left"
         gradientFrom="rgba(36, 49, 55, 1)"
         gradientTo="rgba(6, 81, 87, 0.64) "
       >
-        <h1 className="text-white text-2xl md:text-4xl font-normal   w-80 md:w-full pl-5 md:px-56">
+        <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-normal   w-80 md:w-full pl-5 md:px-52 lg:px-56">
           branding é plataforma&nbsp;
           <span className=" font-bold md:font-light"> de lucro.</span>
         </h1>
       </Hero>
       <section>
-        <div className="p-5  text-zinc-900  ">
-          <h2 className="w-full text-base md:text-3xl font-semibold mb-5">
+        <div className="w-full flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-2 lg:grid-flow-col  xl:gap-12">
+          <div className="lg:row-span-2 lg:order-1 order-2">
+            <Image
+              src="/destaque-servicos.jpg"
+              alt="Destaque servicos"
+              width={3032}
+              height={2224}
+            />
+          </div>
+
+          <h2 className="lg:order-2 order-1 xl:self-center xl:w-[69%]  text-zinc-900 xl:text-3xl md:text-xl text-base font-semibold xl:p-0 md:p-10 p-5">
             Pensamos e executamos tailor made com know how e excelência técnica
             a serviço da sua marca.
           </h2>
-          <p className="w-full   text-base md:text-2xl font-normal">
-            Empresas com marcas consistentes podem obter aumentos de receita de
-            até <span className="font-medium">33% + 74%</span> dos prospects
-            preferem fazer negócios com marcas de boa reputação.
-          </p>
+
+          <div className="order-3 w-full xl:pr-32 xl:px-4 lg:px-14 md:p-14 p-9">
+            <ul className="list-image-[url(/icon-logo.svg)] text-zinc-900 xl:text-2xl md:text-lg text-sm font-normal lg:leading-loose">
+              <li className=" xl:mb-4 mb-8 leading-tight">
+                <span className="inline-block leading-tight">
+                  Empresas com marcas consistentes podem obter aumentos de
+                  receita de até 33%
+                </span>
+              </li>
+              <li>
+                <span className="inline-block leading-tight">
+                  + 74% dos prospects preferem fazer negócios com marcas de boa
+                  reputação.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* <p className="self-center w-[53%] text-base md:text-2xl font-normal">
+            <span className="font-medium"> 
+          </p> */}
         </div>
       </section>
       <Accordion>
