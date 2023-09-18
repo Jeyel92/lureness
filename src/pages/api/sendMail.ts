@@ -1,5 +1,5 @@
 import mailchannelsPlugin from '@cloudflare/pages-plugin-mailchannels'
-
+export const runtime = 'edge'
 export const onRequest = mailchannelsPlugin({
   personalizations: [
     {
