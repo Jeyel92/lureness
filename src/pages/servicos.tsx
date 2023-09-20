@@ -24,7 +24,7 @@ export default function ServicosPage() {
         <div className="w-full flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-2 lg:grid-flow-col  xl:gap-12">
           <div className="lg:row-span-2 lg:order-1 order-2">
             <Image
-              src="/destaque-servicos.jpg"
+              src="/img-reuniao-min.jpg"
               alt="Destaque servicos"
               width={3032}
               height={2224}

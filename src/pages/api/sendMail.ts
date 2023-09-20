@@ -1,37 +1,15 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import mailchannelsPlugin from '@cloudflare/pages-plugin-mailchannels'
 export const runtime = 'edge'
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse,
-) {
-  // const data = req.body
-  // const id = await createItem(data)
-  //
-  const send_request = new Request('https://api.mailchannels.net/tx/v1/send', {
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json',
+export const onRequest = mailchannelsPlugin({
+  personalizations: [
+    {
+      to: [{ name: 'ACME Support', email: 'hello@example.com' }],
     },
-    body: JSON.stringify({
-      personalizations: [
-        { to: [{ email: 'jeiel.benedito@gmail.com', name: 'Test Recipient' }] },
-      ],
-      from: {
-        email: 'sender@example.com',
-        name: 'Test Sender',
-      },
-      subject: 'Test Subject',
-      content: [
-        {
-          type: 'text/plain',
-          value: 'Test message content\n\n',
-        },
-      ],
+  ],
+  from: { name: 'Enquiry', email: 'no-reply@example.com' },
+  respondWith: () =>
+    new Response(null, {
+      status: 302,
+      headers: { Location: '/thank-you' },
     }),
-  })
-
-  const resp = await fetch(send_request)
-  const respText = await resp.text()
-
-  res.status(200).json(respText)
-}
+})
