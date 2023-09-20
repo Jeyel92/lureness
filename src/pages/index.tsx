@@ -72,7 +72,7 @@ export default function IndexPage() {
             <div className={`w-full h-80 md:h-screen left-0 top-0 absolute`}>
               <Image
                 className={`w-full h-80 md:h-screen left-0 top-0 absolute`}
-                src="/img-marcas-fortes.jpg"
+                src="/img-marcas-fortes-min.jpg"
                 alt="Background destaque"
                 layout="fill"
               />
