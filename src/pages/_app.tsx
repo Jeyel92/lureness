@@ -13,13 +13,11 @@ const PreviewProvider = lazy(() => import('~/components/PreviewProvider'))
 
 const sans = Epilogue({
   variable: '--font-family-sans',
-  style: ['normal', 'italic'],
   subsets: ['latin'],
 })
 
 const serif = Libre_Baskerville({
   variable: '--font-family-serif',
-  style: ['normal', 'italic'],
   subsets: ['latin'],
   weight: ['400', '700'],
 })
