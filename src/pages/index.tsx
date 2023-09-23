@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 // import BoxClientes from '~/components/BoxClientes'
 import CardsButton from '~/components/CardsButton'
+import CarouselPortifolio from '~/components/CarouselPortifolio'
 import Cta from '~/components/Cta'
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
@@ -31,7 +32,6 @@ export default function IndexPage() {
             <span className="font-semibold">forte, rentável e lucrativa.</span>
           </h1>
         </Hero>
-
         <section>
           <div className="py-5 md:pt-12 pl-10  text-black md:text-zinc-900  ">
             <h2 className="w-80 md:w-3/4 lg:w-2/3 xl:w-1/2 text-base md:text-2xl font-normal md:mb-5">
@@ -46,7 +46,6 @@ export default function IndexPage() {
             </h2>
           </div>
         </section>
-
         <CardsButton />
         {/* <BoxClientes /> */}
         <Cta bgColor="bg-zinc-900" customClass="gap-2">
@@ -131,6 +130,7 @@ export default function IndexPage() {
           </div>
         </section>
         {/* <Projetos /> */}
+        <CarouselPortifolio />
       </Layout>
     </>
   )
