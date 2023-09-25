@@ -80,7 +80,7 @@ export default function IndexPage() {
                 className={`w-full h-80 md:h-screen left-0 top-0 absolute bg-slate-900 bg-opacity-50`}
               />
             </div>
-            <div className="absolute h-screen w-screen justify-between overflow-hidden hidden md:flex">
+            <div className="absolute h-screen w-full justify-between overflow-hidden hidden md:flex">
               <svg
                 // width="472"
                 // height="670"
