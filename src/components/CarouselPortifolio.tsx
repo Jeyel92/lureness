@@ -1,6 +1,4 @@
-// import { Carousel } from 'flowbite-react'
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
-import Image from 'next/image'
 import {
   ButtonBack,
   ButtonNext,
@@ -17,22 +15,22 @@ const items = [
   {
     label: 'Marketing',
     descricao: descrTeste,
-    imagem: '/carousel/Rectangle 34.png',
+    imagem: '/carousel/rectangle_34.png',
   },
   {
     label: 'Arquitetura',
     descricao: descrTeste,
-    imagem: '/carousel/Rectangle 33.png',
+    imagem: '/carousel/rectangle_33.png',
   },
   {
     label: 'Marketing',
     descricao: descrTeste,
-    imagem: '/carousel/Rectangle 34.png',
+    imagem: '/carousel/rectangle_34.png',
   },
   {
     label: 'Arquitetura',
     descricao: descrTeste,
-    imagem: '/carousel/Rectangle 33.png',
+    imagem: '/carousel/rectangle_33.png',
   },
 ]
 export default function CarouselPortifolio() {
@@ -42,7 +40,7 @@ export default function CarouselPortifolio() {
   if (screenWidth >= 1024) {
     visibleSlides = 4
   } else if (screenWidth >= 768) {
-    visibleSlides = 3
+    visibleSlides = 2
   }
   let controls
 
@@ -71,22 +69,20 @@ export default function CarouselPortifolio() {
         totalSlides={items.length}
         visibleSlides={visibleSlides}
       >
-        <Slider className="h-80 md:h-64">
+        <Slider className="h-80">
           {items.map((item, index) => (
             <Slide index={index} key={index}>
-              <div className="justify-start items-start gap-2 flex border border-red-100 h-80 md:h-64 relative">
-                <Image
-                  alt="carousel "
-                  src={item.imagem}
-                  fill
-                  className="bg-gradient-to-t from-slate-900 to-black rounded-lg"
-                />
-                <div className="flex flex-col gap-4 absolute p-5 justify-end h-80 md:h-64">
-                  {/* <div className="justify-start items-start inline-flex"> */}
+              <div
+                className="justify-start items-start  h-80  mx-3 rounded-lg bg-cover"
+                style={{
+                  backgroundImage: `linear-gradient( rgb(15,23,42,0.64),rgba(0,0,0,0.64)), url(${item.imagem})`,
+                }}
+              >
+                <div className="flex flex-col gap-4 p-5 justify-end h-80">
                   <div className="px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal">
                     {item.label}
                   </div>
-                  {/* </div> */}
+
                   <div className="w-full text-slate-50 text-base font-semibold ">
                     {item.descricao}
                   </div>
