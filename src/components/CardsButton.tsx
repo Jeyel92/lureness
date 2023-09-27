@@ -2,53 +2,46 @@ import { ChevronRightIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
 export default function CardsButton() {
+  const cssCard = `w-full px-4 py-6 md:px-16 md:py-14 h-36 md:h-72  bg-cover flex flex-col justify-between cursor-pointer`
+  const texto = `text-slate-50 text-base font-bold md:text-3xl md:font-semibold`
+  const btnSaibaMais = `flex flex-row  md:w-44 items-center h-4 md:h-8`
+  const btnSaibaMaisTexto = `text-slate-50 text-sm font-normal underline md:text-2xl md:font-semibold `
+  const btnIcon = `h-4 w-4 md:w-8 md:h-8  text-zinc-300 `
   return (
     <section>
-      <div className="flex flex-row flex-wrap md:gap-12 md:px-10 md:mb-8">
-        <Link href="/sobre" className="contents">
-          <div
-            className="md:w-1/3 px-10 md:p-5 h-48 md:h-96 md:rounded-2xl bg-cover flex flex-1 flex-row md:flex-col justify-between items-center gap-6 cursor-pointer"
-            style={{
-              backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.64), rgba(6, 29, 48, 0.64)), url(bg-somos1.png)`,
-            }}
-          >
-            <p className="w-56 md:w-full text-slate-50 text-xl font-normal md:text-2xl md:font-semibold">
-              Somos movidos por resultados a partir de soluções práticas,
-              criativas e estratégica.
-            </p>
-            <div className="flex flex-col-reverse md:flex-row md:justify-between md:w-full items-center ">
-              <p className="text-white md:text-2xl md:font-semibold ">
-                Saiba mais
-              </p>
-              <ChevronRightIcon
-                className="h-6 w-6 text-zinc-300 justify-self-center"
-                aria-hidden="true"
-              />
-            </div>
+      <Link href="/sobre" className="contents">
+        <div
+          className={cssCard}
+          style={{
+            backgroundImage: `linear-gradient(rgba(255, 92, 6, 0.88), rgba(255, 92, 6, 0.88)), url(bg-somos1.png)`,
+          }}
+        >
+          <p className={`w-[19rem] md:w-14  mb-4 md:mb-0 ${texto}`}>
+            Somos movidos por resultados a partir de soluções práticas,
+            criativas e estratégica.
+          </p>
+          <div className={btnSaibaMais}>
+            <p className={btnSaibaMaisTexto}>Saiba mais</p>
+            <ChevronRightIcon className={btnIcon} aria-hidden="true" />
           </div>
-        </Link>
-        <Link href="/servicos" className="contents">
-          <div
-            className="md:w-1/3 px-10 md:p-5 h-48 md:h-96 md:rounded-2xl bg-cover flex flex-1 flex-row md:flex-col justify-between items-center gap-6 cursor-pointer"
-            style={{
-              backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.64), rgba(6, 29, 48, 0.64)), url(bg-modo1.png)`,
-            }}
-          >
-            <p className="w-56 md:w-full text-slate-50 text-xl md:text-2xl font-normal md:font-semibold">
-              Conheça o Modo Lureness Operanti de trabalhar.
-            </p>
-            <div className="flex flex-col-reverse md:flex-row md:justify-between md:w-full items-center ">
-              <p className="text-white md:text-2xl md:font-semibold ">
-                Saiba mais
-              </p>
-              <ChevronRightIcon
-                className="h-6 w-6 text-zinc-300 justify-self-center"
-                aria-hidden="true"
-              />
-            </div>
+        </div>
+      </Link>
+      <Link href="/servicos" className="contents">
+        <div
+          className={cssCard}
+          style={{
+            backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.8), rgba(6, 29, 48, 0.8)), url(bg-modo1.png)`,
+          }}
+        >
+          <p className={`w-48 md:w-full ${texto} `}>Modo Lureness Operanti</p>
+          <div className={btnSaibaMais}>
+            <p className={btnSaibaMaisTexto}>Saiba mais</p>
+            <ChevronRightIcon className={btnIcon} aria-hidden="true" />
           </div>
-        </Link>
-      </div>
+        </div>
+      </Link>
     </section>
   )
 }
+
+// flex flex-row flex-wrap
