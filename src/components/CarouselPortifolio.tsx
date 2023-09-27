@@ -1,4 +1,5 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 import {
   ButtonBack,
   ButtonNext,
@@ -9,6 +10,7 @@ import {
 } from 'pure-react-carousel'
 
 import useWindowDimensions from '../hooks/useWindowDimensions'
+import TituloSessoes from './TituloSessoes'
 
 const descrTeste = 'Arquitetura do prédio XYZ na Avenida Atlantica'
 const items = [
@@ -36,9 +38,10 @@ const items = [
 export default function CarouselPortifolio() {
   let visibleSlides = 1
   const { width: screenWidth } = useWindowDimensions()
-
-  if (screenWidth >= 1024) {
+  if (screenWidth >= 1280) {
     visibleSlides = 4
+  } else if (screenWidth >= 1024) {
+    visibleSlides = 3
   } else if (screenWidth >= 768) {
     visibleSlides = 2
   }
@@ -46,23 +49,35 @@ export default function CarouselPortifolio() {
 
   if (visibleSlides < items.length) {
     controls = (
-      <div className="flex gap-1.5 items-center mt-6">
-        <ButtonBack>
-          <ArrowLeftIcon className="w-6 h-6 " />
-        </ButtonBack>
-        <DotGroup
-          // showAsSelectedForCurrentSlideOnly={true}
-          className="flex gap-1.5 children:w-2 disabled:children:w-6 children:h-2 children:bg-teal-800 disabled:children:bg-teal-800 children:bg-opacity-60 children:rounded-lg"
-        />
-        <ButtonNext>
-          <ArrowRightIcon className="w-6 h-6 " />
-        </ButtonNext>
+      <div className="flex flex-row justify-between items-stretch">
+        <div className="flex gap-1.5 items-center mt-6">
+          <ButtonBack>
+            <ArrowLeftIcon className="w-6 h-6 " />
+          </ButtonBack>
+          <DotGroup
+            // showAsSelectedForCurrentSlideOnly={true}
+            className="flex gap-1.5 children:w-2 disabled:children:w-6 children:h-2 children:bg-teal-800 disabled:children:bg-teal-800 children:bg-opacity-60 children:rounded-lg"
+          />
+          <ButtonNext>
+            <ArrowRightIcon className="w-6 h-6 " />
+          </ButtonNext>
+        </div>
+        <Link
+          className="text-orange-600 text-sm font-normal underline inline-flex self-end"
+          href="/contato"
+        >
+          Veja todos projetos
+        </Link>
       </div>
     )
   }
 
   return (
     <section className="w-full p-5">
+      <TituloSessoes
+        textoLinha1={'conheça os projetos'}
+        textoLinha2={'lureness'}
+      />
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={125}
@@ -73,7 +88,7 @@ export default function CarouselPortifolio() {
           {items.map((item, index) => (
             <Slide index={index} key={index}>
               <div
-                className="justify-start items-start  h-80  mx-3 rounded-lg bg-cover"
+                className="justify-start items-start  h-80  md:mx-3 rounded-lg bg-cover"
                 style={{
                   backgroundImage: `linear-gradient( rgb(15,23,42,0.64),rgba(0,0,0,0.64)), url(${item.imagem})`,
                 }}
