@@ -27,23 +27,21 @@ export default function IndexPage() {
             src={imgLogo}
             alt="logo"
           />
-          <h1 className=" mt-6 text-center text-gray-200 text-base md:text-3xl">
+          <h1 className=" mt-5 text-center text-gray-200 text-base md:text-3xl md:font-bold">
             Sua marca mais&nbsp;
-            <span className="font-semibold">forte, rentável e lucrativa.</span>
+            <span className="font-semibold md:text-slate-50 md:font-bold">
+              forte, rentável e lucrativa.
+            </span>
           </h1>
         </Hero>
         <section>
-          <div className="py-5 md:pt-12 pl-10  text-black md:text-zinc-900  ">
-            <h2 className="w-80 md:w-3/4 lg:w-2/3 xl:w-1/2 text-base md:text-2xl font-normal md:mb-5">
-              Torne a sua marca{' '}
-              <span className="md:text-3xl md:font-semibold">
-                mais relevante!
-              </span>
-              <br />
-              <span className=" md:text-3xl font-normal md:font-serif">
-                Branding é Plataforma de Lucro para vender mais e melhor.
-              </span>
+          <div className="py-5 md:p-16 pl-4  text-black md:text-zinc-900  ">
+            <h2 className="w-72 md:w-full text-2xl md:text-3xl lg:text-4xl font-bold font-serif mb-4 lg:mb-6">
+              Torne a sua marca mais relevante!
             </h2>
+            <p className="w-80 md:w-full text-base md:text-xl lg:text-3xl  font-normal">
+              Branding é Plataforma de Lucro para vender mais e melhor.
+            </p>
           </div>
         </section>
         <CardsButton />
