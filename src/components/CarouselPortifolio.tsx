@@ -16,23 +16,28 @@ const descrTeste = 'Arquitetura do prédio XYZ na Avenida Atlantica'
 const items = [
   {
     label: 'Marketing',
-    descricao: descrTeste,
+    titulo: descrTeste,
     imagem: '/carousel/rectangle_34.png',
+    descricao:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es .',
   },
   {
     label: 'Arquitetura',
-    descricao: descrTeste,
+    titulo: descrTeste,
     imagem: '/carousel/rectangle_33.png',
+    descricao: 'teste',
   },
   {
     label: 'Marketing',
-    descricao: descrTeste,
+    titulo: descrTeste,
     imagem: '/carousel/rectangle_34.png',
+    descricao: 'teste1',
   },
   {
     label: 'Arquitetura',
-    descricao: descrTeste,
+    titulo: descrTeste,
     imagem: '/carousel/rectangle_33.png',
+    descricao: 'teste2',
   },
 ]
 export default function CarouselPortifolio() {
@@ -88,7 +93,7 @@ export default function CarouselPortifolio() {
           {items.map((item, index) => (
             <Slide index={index} key={index}>
               <div
-                className="justify-start items-start  h-80  md:mx-3 rounded-lg bg-cover"
+                className="justify-start items-start  h-80  md:mx-3 rounded-lg bg-cover group"
                 style={{
                   backgroundImage: `linear-gradient( rgb(15,23,42,0.64),rgba(0,0,0,0.64)), url(${item.imagem})`,
                 }}
@@ -99,6 +104,9 @@ export default function CarouselPortifolio() {
                   </div>
 
                   <div className="w-full text-slate-50 text-base font-semibold ">
+                    {item.titulo}
+                  </div>
+                  <div className="hidden group-hover:block w-full text-zinc-100 text-sm font-normal  leading-tight">
                     {item.descricao}
                   </div>
                 </div>
