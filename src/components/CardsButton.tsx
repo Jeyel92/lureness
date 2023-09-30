@@ -13,7 +13,7 @@ export default function CardsButton() {
         <div
           className={cssCard}
           style={{
-            backgroundImage: `linear-gradient(rgba(255, 92, 6, 0.88), rgba(255, 92, 6, 0.88)), url(bg-somos1.png)`,
+            backgroundImage: `linear-gradient(rgba(255, 92, 6, 0.88), rgba(255, 92, 6, 0.88)), url(bg-cardsomos.jpg)`,
           }}
         >
           <p
@@ -32,7 +32,7 @@ export default function CardsButton() {
         <div
           className={cssCard}
           style={{
-            backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.8), rgba(6, 29, 48, 0.8)), url(bg-modo1.png)`,
+            backgroundImage: `linear-gradient(rgba(6, 29, 48, 0.8), rgba(6, 29, 48, 0.8)), url(bg-cardmodo.jpg)`,
           }}
         >
           <p className={`w-48 md:w-full ${cssTexto} `}>
