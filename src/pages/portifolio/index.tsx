@@ -74,7 +74,7 @@ export default function PortifolioPage() {
   return (
     <Layout>
       <Hero
-        bgImageUrl="/hero-background-portifolio.png"
+        bgImageUrl="/hero-portifolio.webp"
         size="h-36 md:h-96"
         textAlign="text-left"
         gradientFrom="90deg, rgba(22, 29, 33, 0.80) 1.02%"
