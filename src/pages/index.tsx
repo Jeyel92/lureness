@@ -46,16 +46,16 @@ export default function IndexPage() {
         </section>
         <CardsButton />
         {/* <BoxClientes /> */}
-        <Cta bgColor="bg-zinc-900" customClass="gap-2">
-          <p className="w-2/5 md:w-3/5 text-white text-2xl font-medium md:text-2xl md:font-semibold">
+        <Cta bgColor="bg-zinc-900" customClass="gap-2 px-4 md:p-16">
+          <p className="w-2/5 md:w-full text-white text-2xl font-medium md:text-4xl md:font-bold">
             Sua marca não vende?
           </p>
-          <div className=" text-slate-50 text-base font-medium underline md:text-white md:text-xl md:font-bold">
+          <div className="text-white text-normal font-medium underline  md:text-2xl md:font-normal">
             <Link href="/contato"> Saiba o motivo</Link>
           </div>
         </Cta>
         <section>
-          <div className="  px-4 py-10 md:pr-8">
+          <div className="  px-4 py-10 md:p-16">
             <h3 className="w-80 md:w-full text-orange-600 text-2xl md:text-4xl font-semibold md:font-bold mb-4">
               Marcas fortes, negócios rentáveis.
             </h3>
