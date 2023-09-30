@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-// import BoxClientes from '~/components/BoxClientes'
+import BoxClientes from '~/components/BoxClientes'
 import CardsButton from '~/components/CardsButton'
 import CarouselPortifolio from '~/components/CarouselPortifolio'
 import Cta from '~/components/Cta'
@@ -45,7 +45,7 @@ export default function IndexPage() {
           </div>
         </section>
         <CardsButton />
-        {/* <BoxClientes /> */}
+        <BoxClientes />
         <Cta bgColor="bg-zinc-900" customClass="gap-2 px-4 md:p-16">
           <p className="w-2/5 md:w-full text-white text-2xl font-medium md:text-4xl md:font-bold">
             Sua marca não vende?
