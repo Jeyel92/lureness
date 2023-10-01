@@ -86,13 +86,9 @@ export default function CarouselPortifolio() {
       >
         <Slider className="h-80">
           {items.map((item, index) => {
-            let label = <></>
-            if (item.label) {
-              label = (
-                <div className="px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal">
-                  {item.label}
-                </div>
-              )
+            let toggleLabel = ''
+            if (item.label != '') {
+              toggleLabel = 'hidden'
             }
             return (
               <Slide index={index} key={index}>
@@ -103,7 +99,11 @@ export default function CarouselPortifolio() {
                   }}
                 >
                   <div className="flex flex-col gap-4 p-5 justify-end h-80">
-                    {label}
+                    <div
+                      className={`px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal ${toggleLabel}`}
+                    >
+                      {item.label}
+                    </div>
                     <div className="w-full text-slate-50 text-base font-semibold ">
                       {item.titulo}
                     </div>

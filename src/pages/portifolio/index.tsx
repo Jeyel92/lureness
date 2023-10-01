@@ -2,61 +2,29 @@ import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
 import useWindowDimensions from '~/hooks/useWindowDimensions'
 
-const descrTeste = 'Arquitetura do prédio XYZ na Avenida Atlantica'
-const imgRet34 = '/carousel/rectangle_34.png'
-const imgRet33 = '/carousel/rectangle_33.png'
 const items = [
   {
-    label: 'Marketing',
-    titulo: descrTeste,
-    imagem: imgRet34,
+    label: '',
+    titulo: 'Haix Rental',
+    imagem: '/portifolio/haix/07.png',
     descricao:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es .',
+      'Buscando os próximos passos estratégicos do negócio, a Altura Andaimes encontrou a Lureness para auxiliar neste processo de transição da sucessão do seu fundador para suas filhas, as novas líderes do business.',
   },
   {
-    label: 'Arquitetura',
-    titulo: descrTeste,
-    imagem: imgRet33,
-    descricao: 'teste',
+    label: '',
+    titulo: 'Neocount',
+    imagem: '/portifolio/neocount/04.png',
+    descricao:
+      'Consolidada no segmento contábil brasileiro, a Neocount passava por um momento de mudança, o que refletiu, inclusive na mudança de nome.',
   },
   {
-    label: 'Marketing',
-    titulo: descrTeste,
-    imagem: imgRet34,
-    descricao: 'teste1',
-  },
-  {
-    label: 'Arquitetura',
-    titulo: descrTeste,
-    imagem: imgRet33,
-    descricao: 'teste2',
-  },
-  {
-    label: 'Arquitetura',
-    titulo: descrTeste,
-    imagem: imgRet33,
-    descricao: 'teste',
-  },
-  {
-    label: 'Marketing',
-    titulo: descrTeste,
-    imagem: imgRet34,
-    descricao: 'teste1',
-  },
-  {
-    label: 'Arquitetura',
-    titulo: descrTeste,
-    imagem: imgRet33,
-    descricao: 'teste2',
-  },
-  {
-    label: 'Marketing',
-    titulo: descrTeste,
-    imagem: imgRet34,
-    descricao: 'teste1',
+    label: '',
+    titulo: 'Pine PR',
+    imagem: '/portifolio/pine/03.png',
+    descricao:
+      'Perdendo clientes pela falta de posicionamento, a Pineapple Hub teve na Lureness uma consultoria estratégica de rebranding e produtização de sua esteira de serviços.',
   },
 ]
-
 export default function PortifolioPage() {
   const { width: screenWidth } = useWindowDimensions()
   let tipoTela = 'mobile'
@@ -84,7 +52,7 @@ export default function PortifolioPage() {
           portifolio
         </h1>
       </Hero>
-      <div className="flex flex-col mt-20 md:grid md:grid-cols-6 md:gap-6 md:p-12">
+      <div className="flex flex-col mt-10 md:grid md:grid-cols-6 md:gap-6 md:p-12">
         {items.map((item, index) => {
           let height = 'h-80'
           let rowspan = ''
@@ -122,6 +90,11 @@ export default function PortifolioPage() {
             }
           }
 
+          let toggleLabel = ''
+          if (item.label != '') {
+            toggleLabel = 'hidden'
+          }
+
           return (
             <div
               key={index}
@@ -131,7 +104,9 @@ export default function PortifolioPage() {
               }}
             >
               <div className={`flex flex-col gap-4 p-5 justify-end ${height}`}>
-                <div className="px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal">
+                <div
+                  className={`px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal ${toggleLabel}`}
+                >
                   {item.label}
                 </div>
 
