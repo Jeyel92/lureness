@@ -12,32 +12,27 @@ import {
 import useWindowDimensions from '../hooks/useWindowDimensions'
 import TituloSessoes from './TituloSessoes'
 
-const descrTeste = 'Arquitetura do prédio XYZ na Avenida Atlantica'
 const items = [
   {
-    label: 'Marketing',
-    titulo: descrTeste,
-    imagem: '/carousel/rectangle_34.png',
+    label: '',
+    titulo: 'Haix Rental',
+    imagem: '/portifolio/haix/07.png',
     descricao:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es .',
+      'Buscando os próximos passos estratégicos do negócio, a Altura Andaimes encontrou a Lureness para auxiliar neste processo de transição da sucessão do seu fundador para suas filhas, as novas líderes do business.',
   },
   {
-    label: 'Arquitetura',
-    titulo: descrTeste,
-    imagem: '/carousel/rectangle_33.png',
-    descricao: 'teste',
+    label: '',
+    titulo: 'Neocount',
+    imagem: '/portifolio/neocount/04.png',
+    descricao:
+      'Consolidada no segmento contábil brasileiro, a Neocount passava por um momento de mudança, o que refletiu, inclusive na mudança de nome.',
   },
   {
-    label: 'Marketing',
-    titulo: descrTeste,
-    imagem: '/carousel/rectangle_34.png',
-    descricao: 'teste1',
-  },
-  {
-    label: 'Arquitetura',
-    titulo: descrTeste,
-    imagem: '/carousel/rectangle_33.png',
-    descricao: 'teste2',
+    label: '',
+    titulo: 'Pine PR',
+    imagem: '/portifolio/pine/03.png',
+    descricao:
+      'Perdendo clientes pela falta de posicionamento, a Pineapple Hub teve na Lureness uma consultoria estratégica de rebranding e produtização de sua esteira de serviços.',
   },
 ]
 export default function CarouselPortifolio() {
@@ -69,7 +64,7 @@ export default function CarouselPortifolio() {
         </div>
         <Link
           className="text-orange-600 text-sm font-normal underline inline-flex self-end"
-          href="/contato"
+          href="/portifolio"
         >
           Veja todos projetos
         </Link>
@@ -90,30 +85,42 @@ export default function CarouselPortifolio() {
         visibleSlides={visibleSlides}
       >
         <Slider className="h-80">
-          {items.map((item, index) => (
-            <Slide index={index} key={index}>
-              <div
-                className="justify-start items-start  h-80  md:mx-3 rounded-lg bg-cover group"
-                style={{
-                  backgroundImage: `linear-gradient( rgb(15,23,42,0.64),rgba(0,0,0,0.64)), url(${item.imagem})`,
-                }}
-              >
-                <div className="flex flex-col gap-4 p-5 justify-end h-80">
-                  <div className="px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal">
-                    {item.label}
-                  </div>
-
-                  <div className="w-full text-slate-50 text-base font-semibold ">
-                    {item.titulo}
-                  </div>
-                  <div className="hidden group-hover:block w-full text-zinc-100 text-sm font-normal  leading-tight">
-                    {item.descricao}
+          {items.map((item, index) => {
+            let label = <></>
+            if (item.label) {
+              label = (
+                <div className="px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal">
+                  {item.label}
+                </div>
+              )
+            }
+            return (
+              <Slide index={index} key={index}>
+                <div
+                  className="justify-start items-start  h-80  md:mx-3 rounded-lg bg-cover group"
+                  style={{
+                    backgroundImage: `linear-gradient( rgb(15,23,42,0.64),rgba(0,0,0,0.64)), url(${item.imagem})`,
+                  }}
+                >
+                  <div className="flex flex-col gap-4 p-5 justify-end h-80">
+                    {label}
+                    <div className="w-full text-slate-50 text-base font-semibold ">
+                      {item.titulo}
+                    </div>
+                    <div className="hidden group-hover:block w-full text-zinc-100 text-sm font-normal  leading-tight">
+                      {item.descricao}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Slide>
-          ))}
+              </Slide>
+            )
+          })}
         </Slider>
+        <style jsx global>{`
+          .sliderTray___-vHFQ {
+            margin: 0 auto;
+          }
+        `}</style>
         {controls}
       </CarouselProvider>
     </section>
