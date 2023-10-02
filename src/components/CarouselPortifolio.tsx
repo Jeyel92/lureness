@@ -15,6 +15,7 @@ import TituloSessoes from './TituloSessoes'
 const items = [
   {
     label: '',
+    id: 'haix',
     titulo: 'Haix Rental',
     imagem: '/portifolio/haix/07.png',
     descricao:
@@ -22,6 +23,7 @@ const items = [
   },
   {
     label: '',
+    id: 'neocount',
     titulo: 'Neocount',
     imagem: '/portifolio/neocount/04.png',
     descricao:
@@ -29,6 +31,7 @@ const items = [
   },
   {
     label: '',
+    id: 'pine',
     titulo: 'Pine PR',
     imagem: '/portifolio/pine/03.png',
     descricao:
@@ -87,31 +90,33 @@ export default function CarouselPortifolio() {
         <Slider className="h-80">
           {items.map((item, index) => {
             let toggleLabel = ''
-            if (item.label != '') {
+            if (item.label == '') {
               toggleLabel = 'hidden'
             }
             return (
               <Slide index={index} key={index}>
-                <div
-                  className="justify-start items-start  h-80  md:mx-3 rounded-lg bg-cover group"
-                  style={{
-                    backgroundImage: `linear-gradient( rgb(15,23,42,0.64),rgba(0,0,0,0.64)), url(${item.imagem})`,
-                  }}
-                >
-                  <div className="flex flex-col gap-4 p-5 justify-end h-80">
-                    <div
-                      className={`px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal ${toggleLabel}`}
-                    >
-                      {item.label}
-                    </div>
-                    <div className="w-full text-slate-50 text-base font-semibold ">
-                      {item.titulo}
-                    </div>
-                    <div className="hidden group-hover:block w-full text-zinc-100 text-sm font-normal  leading-tight">
-                      {item.descricao}
+                <Link href={`/portifolio/${item.id}`}>
+                  <div
+                    className="justify-start items-start  h-80  md:mx-3 rounded-lg bg-cover group"
+                    style={{
+                      backgroundImage: `linear-gradient( rgb(15,23,42,0.64),rgba(0,0,0,0.64)), url(${item.imagem})`,
+                    }}
+                  >
+                    <div className="flex flex-col gap-4 p-5 justify-end h-80">
+                      <div
+                        className={`px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal ${toggleLabel}`}
+                      >
+                        {item.label}
+                      </div>
+                      <div className="w-full text-slate-50 text-base font-semibold ">
+                        {item.titulo}
+                      </div>
+                      <div className="hidden group-hover:block w-full text-zinc-100 text-sm font-normal  leading-tight">
+                        {item.descricao}
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </Slide>
             )
           })}

@@ -1,9 +1,12 @@
+import Link from 'next/link'
+
 import Hero from '~/components/Hero'
 import Layout from '~/components/Layout'
 import useWindowDimensions from '~/hooks/useWindowDimensions'
 
 const items = [
   {
+    id: 'haix',
     label: '',
     titulo: 'Haix Rental',
     imagem: '/portifolio/haix/07.png',
@@ -12,6 +15,7 @@ const items = [
   },
   {
     label: '',
+    id: 'neocount',
     titulo: 'Neocount',
     imagem: '/portifolio/neocount/04.png',
     descricao:
@@ -20,6 +24,7 @@ const items = [
   {
     label: '',
     titulo: 'Pine PR',
+    id: 'pine',
     imagem: '/portifolio/pine/03.png',
     descricao:
       'Perdendo clientes pela falta de posicionamento, a Pineapple Hub teve na Lureness uma consultoria estratégica de rebranding e produtização de sua esteira de serviços.',
@@ -29,11 +34,7 @@ export default function PortifolioPage() {
   const { width: screenWidth } = useWindowDimensions()
   let tipoTela = 'mobile'
   let contador = 0
-  // if (screenWidth >= 1280) {
-  //   visibleSlides = 4
-  // } else if (screenWidth >= 1024) {
-  //   visibleSlides = 3
-  // } else
+
   if (screenWidth >= 768) {
     tipoTela = 'desktop'
   }
@@ -91,7 +92,7 @@ export default function PortifolioPage() {
           }
 
           let toggleLabel = ''
-          if (item.label != '') {
+          if (item.label == '') {
             toggleLabel = 'hidden'
           }
 
@@ -103,20 +104,24 @@ export default function PortifolioPage() {
                 backgroundImage: `linear-gradient(358deg, rgb(6, 29, 48, 0.90) 11.29%,rgba(0, 0, 0, 0.00) 95.24%), url(${item.imagem})`,
               }}
             >
-              <div className={`flex flex-col gap-4 p-5 justify-end ${height}`}>
+              <Link href={`/portifolio/${item.id}`}>
                 <div
-                  className={`px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal ${toggleLabel}`}
+                  className={`flex flex-col gap-4 p-5 justify-end ${height}`}
                 >
-                  {item.label}
-                </div>
+                  <div
+                    className={`px-2 py-1 border border-gray-200 rounded-lg w-fit text-gray-200 text-sm font-normal ${toggleLabel}`}
+                  >
+                    {item.label}
+                  </div>
 
-                <div className="w-full text-slate-50 text-base font-semibold ">
-                  {item.titulo}
+                  <div className="w-full text-slate-50 text-base font-semibold ">
+                    {item.titulo}
+                  </div>
+                  <div className="hidden group-hover:block w-full text-zinc-100 text-sm font-normal  leading-tight">
+                    {item.descricao}
+                  </div>
                 </div>
-                <div className="hidden group-hover:block w-full text-zinc-100 text-sm font-normal  leading-tight">
-                  {item.descricao}
-                </div>
-              </div>
+              </Link>
             </div>
           )
         })}
