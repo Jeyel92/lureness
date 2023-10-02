@@ -71,6 +71,12 @@ export default function Header() {
               Nossos serviços
             </Link>
             <Link
+              href="/portifolio"
+              className="block py-3  text-sm font-semibold leading-6"
+            >
+              Portifolio
+            </Link>
+            <Link
               href="/contato"
               className="block py-3  text-sm font-semibold leading-6"
             >
@@ -138,6 +144,16 @@ export default function Header() {
                   }`}
                 >
                   Nossos serviços
+                </Link>
+                <Link
+                  href="/portifolio"
+                  className={`block py-3  ${
+                    router.pathname == '/portifolio'
+                      ? cssLinkAtivoMobile
+                      : cssLinkMobile
+                  }`}
+                >
+                  Portifolio
                 </Link>
                 <Link href="/contato" className="block py-3 font-normal">
                   Contato
