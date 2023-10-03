@@ -19,7 +19,7 @@ export default function Header() {
     <>
       <header>
         <nav
-          className="flex px-5 py-3 md:py-0 justify-between items-center bg-slate-50 shadow"
+          className="flex px-5 py-3 lg:py-0 justify-between items-center bg-slate-50 shadow"
           aria-label="Global"
         >
           <div className="w-24 h-6 justify-center items-center inline-flex">

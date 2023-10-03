@@ -76,7 +76,7 @@ export default function CarouselPortifolio() {
   }
 
   return (
-    <section className="w-full p-5 md:p-16">
+    <section className="w-full p-5 md:px-16 md:pt-0">
       <TituloSessoes
         textoLinha1={'conheça os projetos'}
         textoLinha2={'lureness'}
