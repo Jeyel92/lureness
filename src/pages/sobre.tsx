@@ -8,11 +8,11 @@ export default function SobrePage() {
   return (
     <Layout>
       <Hero
-        bgImageUrl="/hero-backgroud-sobre.png"
+        bgImageUrl="/hero-sobre.webp"
         size="h-36 md:h-96"
         textAlign="text-left"
-        gradientFrom="rgba(36, 49, 55, 1)"
-        gradientTo="rgba(6, 81, 87, 0.64) "
+        gradientFrom="90deg, rgba(36, 49, 55, 1) 1.02%"
+        gradientTo="rgba(6, 81, 87, 0.64) 99.74%"
       >
         <h1 className="text-white text-2xl md:text-4xl font-bold md:font-light w-72 md:w-full pl-5 md:px-56">
           posicionando a sua marca&nbsp;

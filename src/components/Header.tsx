@@ -19,7 +19,7 @@ export default function Header() {
     <>
       <header>
         <nav
-          className="flex px-5 py-3 md:py-0 justify-between items-center bg-slate-50 shadow"
+          className="flex px-5 py-3 lg:py-0 justify-between items-center bg-slate-50 shadow"
           aria-label="Global"
         >
           <div className="w-24 h-6 justify-center items-center inline-flex">
@@ -69,6 +69,12 @@ export default function Header() {
               className="block py-3  text-sm font-semibold leading-6"
             >
               Nossos serviços
+            </Link>
+            <Link
+              href="/portifolio"
+              className="block py-3  text-sm font-semibold leading-6"
+            >
+              Portifolio
             </Link>
             <Link
               href="/contato"
@@ -138,6 +144,16 @@ export default function Header() {
                   }`}
                 >
                   Nossos serviços
+                </Link>
+                <Link
+                  href="/portifolio"
+                  className={`block py-3  ${
+                    router.pathname == '/portifolio'
+                      ? cssLinkAtivoMobile
+                      : cssLinkMobile
+                  }`}
+                >
+                  Portifolio
                 </Link>
                 <Link href="/contato" className="block py-3 font-normal">
                   Contato

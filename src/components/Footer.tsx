@@ -41,9 +41,10 @@ export default function Footer() {
         </div>
         <div className=" justify-end gap-4 flex">
           <div className="w-6 h-6 relative">
-            <a
-              href="#!"
+            <Link
+              href="https://www.instagram.com/somoslureness"
               className="mr-6 text-neutral-600 dark:text-neutral-200"
+              target="_blank"
             >
               <svg
                 width="24"
@@ -65,12 +66,13 @@ export default function Footer() {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="w-6 h-6 relative">
-            <a
-              href="#!"
+            <Link
+              href="https://www.linkedin.com/company/introduce-to-market"
               className="mr-6 text-neutral-600 dark:text-neutral-200"
+              target="_blank"
             >
               <svg
                 width="24"
@@ -97,7 +99,7 @@ export default function Footer() {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </footer>
